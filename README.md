@@ -1,4 +1,4 @@
-# Trabajo Práctico Integrador - Aprendizaje de Máquinas I
+# Trabajo Práctico - Aprendizaje de Máquinas II
 
 ### Carrera de Especialización en Inteligencia Artificial - Cohorte 17
 
