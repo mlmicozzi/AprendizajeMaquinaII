@@ -1,0 +1,223 @@
+[2024-11-18T18:05:52.943+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spotify_retrain_challenge_model_v3.train_challenger_model manual__2024-11-18T18:05:52.045458+00:00 [queued]>
+[2024-11-18T18:05:52.947+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spotify_retrain_challenge_model_v3.train_challenger_model manual__2024-11-18T18:05:52.045458+00:00 [queued]>
+[2024-11-18T18:05:52.947+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-11-18T18:05:52.954+0000] {taskinstance.py:2191} INFO - Executing <Task(_PythonVirtualenvDecoratedOperator): train_challenger_model> on 2024-11-18 18:05:52.045458+00:00
+[2024-11-18T18:05:52.956+0000] {standard_task_runner.py:60} INFO - Started process 4279 to run task
+[2024-11-18T18:05:52.958+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'spotify_retrain_challenge_model_v3', 'train_challenger_model', 'manual__2024-11-18T18:05:52.045458+00:00', '--job-id', '69', '--raw', '--subdir', 'DAGS_FOLDER/retrain_music_model.py', '--cfg-path', '/tmp/tmpvhff0m_b']
+[2024-11-18T18:05:52.959+0000] {standard_task_runner.py:88} INFO - Job 69: Subtask train_challenger_model
+[2024-11-18T18:05:52.988+0000] {task_command.py:423} INFO - Running <TaskInstance: spotify_retrain_challenge_model_v3.train_challenger_model manual__2024-11-18T18:05:52.045458+00:00 [running]> on host 98017b53a184
+[2024-11-18T18:05:53.028+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Martín Horn' AIRFLOW_CTX_DAG_ID='spotify_retrain_challenge_model_v3' AIRFLOW_CTX_TASK_ID='train_challenger_model' AIRFLOW_CTX_EXECUTION_DATE='2024-11-18T18:05:52.045458+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-18T18:05:52.045458+00:00'
+[2024-11-18T18:05:53.029+0000] {process_utils.py:182} INFO - Executing cmd: /usr/local/bin/python -m virtualenv /tmp/venvro2x4xnt --system-site-packages --python=python
+[2024-11-18T18:05:53.033+0000] {process_utils.py:186} INFO - Output:
+[2024-11-18T18:05:53.355+0000] {process_utils.py:190} INFO - created virtual environment CPython3.8.18.final.0-64 in 114ms
+[2024-11-18T18:05:53.358+0000] {process_utils.py:190} INFO -   creator CPython3Posix(dest=/tmp/venvro2x4xnt, clear=False, no_vcs_ignore=False, global=True)
+[2024-11-18T18:05:53.359+0000] {process_utils.py:190} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/***/.local/share/virtualenv)
+[2024-11-18T18:05:53.363+0000] {process_utils.py:190} INFO -     added seed packages: pip==23.3.1, setuptools==69.0.2, wheel==0.42.0
+[2024-11-18T18:05:53.364+0000] {process_utils.py:190} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2024-11-18T18:05:53.374+0000] {process_utils.py:182} INFO - Executing cmd: /tmp/venvro2x4xnt/bin/pip install -r /tmp/venvro2x4xnt/requirements.txt
+[2024-11-18T18:05:53.378+0000] {process_utils.py:186} INFO - Output:
+[2024-11-18T18:05:54.304+0000] {process_utils.py:190} INFO - Collecting boto3==1.28.0 (from -r /tmp/venvro2x4xnt/requirements.txt (line 1))
+[2024-11-18T18:05:54.306+0000] {process_utils.py:190} INFO -   Using cached boto3-1.28.0-py3-none-any.whl.metadata (6.6 kB)
+[2024-11-18T18:05:54.349+0000] {process_utils.py:190} INFO - Collecting mlflow==2.10.2 (from -r /tmp/venvro2x4xnt/requirements.txt (line 2))
+[2024-11-18T18:05:54.350+0000] {process_utils.py:190} INFO -   Using cached mlflow-2.10.2-py3-none-any.whl.metadata (13 kB)
+[2024-11-18T18:05:54.351+0000] {process_utils.py:190} INFO - Requirement already satisfied: pandas==2.0.3 in /home/***/.local/lib/python3.8/site-packages (from -r /tmp/venvro2x4xnt/requirements.txt (line 3)) (2.0.3)
+[2024-11-18T18:05:54.351+0000] {process_utils.py:190} INFO - Requirement already satisfied: scikit-learn==1.3.2 in /home/***/.local/lib/python3.8/site-packages (from -r /tmp/venvro2x4xnt/requirements.txt (line 4)) (1.3.2)
+[2024-11-18T18:05:54.453+0000] {process_utils.py:190} INFO - Collecting tensorflow==2.13.0 (from -r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:54.454+0000] {process_utils.py:190} INFO -   Using cached tensorflow-2.13.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+[2024-11-18T18:05:54.842+0000] {process_utils.py:190} INFO - Collecting botocore<1.32.0,>=1.31.0 (from boto3==1.28.0->-r /tmp/venvro2x4xnt/requirements.txt (line 1))
+[2024-11-18T18:05:54.844+0000] {process_utils.py:190} INFO -   Using cached botocore-1.31.85-py3-none-any.whl.metadata (6.1 kB)
+[2024-11-18T18:05:54.845+0000] {process_utils.py:190} INFO - Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /home/***/.local/lib/python3.8/site-packages (from boto3==1.28.0->-r /tmp/venvro2x4xnt/requirements.txt (line 1)) (0.10.0)
+[2024-11-18T18:05:54.869+0000] {process_utils.py:190} INFO - Collecting s3transfer<0.7.0,>=0.6.0 (from boto3==1.28.0->-r /tmp/venvro2x4xnt/requirements.txt (line 1))
+[2024-11-18T18:05:54.870+0000] {process_utils.py:190} INFO -   Using cached s3transfer-0.6.2-py3-none-any.whl.metadata (1.8 kB)
+[2024-11-18T18:05:54.922+0000] {process_utils.py:190} INFO - Requirement already satisfied: click<9,>=7.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (8.1.7)
+[2024-11-18T18:05:54.923+0000] {process_utils.py:190} INFO - Requirement already satisfied: cloudpickle<4 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (3.1.0)
+[2024-11-18T18:05:54.939+0000] {process_utils.py:190} INFO - Collecting entrypoints<1 (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2))
+[2024-11-18T18:05:54.940+0000] {process_utils.py:190} INFO -   Using cached entrypoints-0.4-py3-none-any.whl.metadata (2.6 kB)
+[2024-11-18T18:05:54.941+0000] {process_utils.py:190} INFO - Requirement already satisfied: gitpython<4,>=2.1.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (3.1.43)
+[2024-11-18T18:05:54.941+0000] {process_utils.py:190} INFO - Requirement already satisfied: pyyaml<7,>=5.1 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (6.0.1)
+[2024-11-18T18:05:54.942+0000] {process_utils.py:190} INFO - Requirement already satisfied: protobuf<5,>=3.12.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (4.25.2)
+[2024-11-18T18:05:54.942+0000] {process_utils.py:190} INFO - Requirement already satisfied: pytz<2024 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (2023.3.post1)
+[2024-11-18T18:05:54.942+0000] {process_utils.py:190} INFO - Requirement already satisfied: requests<3,>=2.17.3 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (2.31.0)
+[2024-11-18T18:05:54.943+0000] {process_utils.py:190} INFO - Requirement already satisfied: packaging<24 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (23.2)
+[2024-11-18T18:05:54.943+0000] {process_utils.py:190} INFO - Requirement already satisfied: importlib-metadata!=4.7.0,<8,>=3.7.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (6.11.0)
+[2024-11-18T18:05:54.944+0000] {process_utils.py:190} INFO - Requirement already satisfied: sqlparse<1,>=0.4.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (0.4.4)
+[2024-11-18T18:05:54.944+0000] {process_utils.py:190} INFO - Requirement already satisfied: alembic!=1.10.0,<2 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (1.13.1)
+[2024-11-18T18:05:54.945+0000] {process_utils.py:190} INFO - Requirement already satisfied: docker<8,>=4.0.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (7.0.0)
+[2024-11-18T18:05:54.945+0000] {process_utils.py:190} INFO - Requirement already satisfied: Flask<4 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (2.2.5)
+[2024-11-18T18:05:54.945+0000] {process_utils.py:190} INFO - Requirement already satisfied: numpy<2 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (1.24.4)
+[2024-11-18T18:05:54.946+0000] {process_utils.py:190} INFO - Requirement already satisfied: scipy<2 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (1.10.1)
+[2024-11-18T18:05:54.961+0000] {process_utils.py:190} INFO - Collecting querystring-parser<2 (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2))
+[2024-11-18T18:05:54.963+0000] {process_utils.py:190} INFO -   Using cached querystring_parser-1.2.4-py2.py3-none-any.whl.metadata (559 bytes)
+[2024-11-18T18:05:54.964+0000] {process_utils.py:190} INFO - Requirement already satisfied: sqlalchemy<3,>=1.4.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (1.4.51)
+[2024-11-18T18:05:54.964+0000] {process_utils.py:190} INFO - Requirement already satisfied: pyarrow<16,>=4.0.0 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (14.0.2)
+[2024-11-18T18:05:54.964+0000] {process_utils.py:190} INFO - Requirement already satisfied: markdown<4,>=3.3 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (3.5.2)
+[2024-11-18T18:05:54.965+0000] {process_utils.py:190} INFO - Requirement already satisfied: matplotlib<4 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (3.7.5)
+[2024-11-18T18:05:54.965+0000] {process_utils.py:190} INFO - Requirement already satisfied: gunicorn<22 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (21.2.0)
+[2024-11-18T18:05:54.966+0000] {process_utils.py:190} INFO - Requirement already satisfied: Jinja2<4,>=2.11 in /home/***/.local/lib/python3.8/site-packages (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (3.1.3)
+[2024-11-18T18:05:55.019+0000] {process_utils.py:190} INFO - Requirement already satisfied: python-dateutil>=2.8.2 in /home/***/.local/lib/python3.8/site-packages (from pandas==2.0.3->-r /tmp/venvro2x4xnt/requirements.txt (line 3)) (2.8.2)
+[2024-11-18T18:05:55.019+0000] {process_utils.py:190} INFO - Requirement already satisfied: tzdata>=2022.1 in /home/***/.local/lib/python3.8/site-packages (from pandas==2.0.3->-r /tmp/venvro2x4xnt/requirements.txt (line 3)) (2023.4)
+[2024-11-18T18:05:55.040+0000] {process_utils.py:190} INFO - Requirement already satisfied: joblib>=1.1.1 in /home/***/.local/lib/python3.8/site-packages (from scikit-learn==1.3.2->-r /tmp/venvro2x4xnt/requirements.txt (line 4)) (1.4.2)
+[2024-11-18T18:05:55.041+0000] {process_utils.py:190} INFO - Requirement already satisfied: threadpoolctl>=2.0.0 in /home/***/.local/lib/python3.8/site-packages (from scikit-learn==1.3.2->-r /tmp/venvro2x4xnt/requirements.txt (line 4)) (3.5.0)
+[2024-11-18T18:05:55.075+0000] {process_utils.py:190} INFO - Collecting absl-py>=1.0.0 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.076+0000] {process_utils.py:190} INFO -   Using cached absl_py-2.1.0-py3-none-any.whl.metadata (2.3 kB)
+[2024-11-18T18:05:55.092+0000] {process_utils.py:190} INFO - Collecting astunparse>=1.6.0 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.094+0000] {process_utils.py:190} INFO -   Using cached astunparse-1.6.3-py2.py3-none-any.whl.metadata (4.4 kB)
+[2024-11-18T18:05:55.110+0000] {process_utils.py:190} INFO - Collecting flatbuffers>=23.1.21 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.111+0000] {process_utils.py:190} INFO -   Using cached flatbuffers-24.3.25-py2.py3-none-any.whl.metadata (850 bytes)
+[2024-11-18T18:05:55.130+0000] {process_utils.py:190} INFO - Collecting gast<=0.4.0,>=0.2.1 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.131+0000] {process_utils.py:190} INFO -   Using cached gast-0.4.0-py3-none-any.whl.metadata (1.1 kB)
+[2024-11-18T18:05:55.149+0000] {process_utils.py:190} INFO - Collecting google-pasta>=0.1.1 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.150+0000] {process_utils.py:190} INFO -   Using cached google_pasta-0.2.0-py3-none-any.whl.metadata (814 bytes)
+[2024-11-18T18:05:55.151+0000] {process_utils.py:190} INFO - Requirement already satisfied: grpcio<2.0,>=1.24.3 in /home/***/.local/lib/python3.8/site-packages (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (1.60.0)
+[2024-11-18T18:05:55.192+0000] {process_utils.py:190} INFO - Collecting h5py>=2.9.0 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.194+0000] {process_utils.py:190} INFO -   Using cached h5py-3.11.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.5 kB)
+[2024-11-18T18:05:55.220+0000] {process_utils.py:190} INFO - Collecting keras<2.14,>=2.13.1 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.222+0000] {process_utils.py:190} INFO -   Using cached keras-2.13.1-py3-none-any.whl.metadata (2.4 kB)
+[2024-11-18T18:05:55.242+0000] {process_utils.py:190} INFO - Collecting libclang>=13.0.0 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.243+0000] {process_utils.py:190} INFO -   Using cached libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl.metadata (5.2 kB)
+[2024-11-18T18:05:55.392+0000] {process_utils.py:190} INFO - Collecting numpy<2 (from mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2))
+[2024-11-18T18:05:55.394+0000] {process_utils.py:190} INFO -   Using cached numpy-1.24.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+[2024-11-18T18:05:55.412+0000] {process_utils.py:190} INFO - Collecting opt-einsum>=2.3.2 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.413+0000] {process_utils.py:190} INFO -   Using cached opt_einsum-3.4.0-py3-none-any.whl.metadata (6.3 kB)
+[2024-11-18T18:05:55.414+0000] {process_utils.py:190} INFO - Requirement already satisfied: setuptools in /tmp/venvro2x4xnt/lib/python3.8/site-packages (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (69.0.2)
+[2024-11-18T18:05:55.414+0000] {process_utils.py:190} INFO - Requirement already satisfied: six>=1.12.0 in /home/***/.local/lib/python3.8/site-packages (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (1.16.0)
+[2024-11-18T18:05:55.439+0000] {process_utils.py:190} INFO - Collecting tensorboard<2.14,>=2.13 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.440+0000] {process_utils.py:190} INFO -   Using cached tensorboard-2.13.0-py3-none-any.whl.metadata (1.8 kB)
+[2024-11-18T18:05:55.458+0000] {process_utils.py:190} INFO - Collecting tensorflow-estimator<2.14,>=2.13.0 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.460+0000] {process_utils.py:190} INFO -   Using cached tensorflow_estimator-2.13.0-py2.py3-none-any.whl.metadata (1.3 kB)
+[2024-11-18T18:05:55.460+0000] {process_utils.py:190} INFO - Requirement already satisfied: termcolor>=1.1.0 in /home/***/.local/lib/python3.8/site-packages (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (2.4.0)
+[2024-11-18T18:05:55.486+0000] {process_utils.py:190} INFO - Collecting typing-extensions<4.6.0,>=3.6.6 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.487+0000] {process_utils.py:190} INFO -   Using cached typing_extensions-4.5.0-py3-none-any.whl.metadata (8.5 kB)
+[2024-11-18T18:05:55.489+0000] {process_utils.py:190} INFO - Requirement already satisfied: wrapt>=1.11.0 in /home/***/.local/lib/python3.8/site-packages (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (1.16.0)
+[2024-11-18T18:05:55.544+0000] {process_utils.py:190} INFO - Collecting tensorflow-io-gcs-filesystem>=0.23.1 (from tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.545+0000] {process_utils.py:190} INFO -   Using cached tensorflow_io_gcs_filesystem-0.34.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (14 kB)
+[2024-11-18T18:05:55.553+0000] {process_utils.py:190} INFO - Requirement already satisfied: Mako in /home/***/.local/lib/python3.8/site-packages (from alembic!=1.10.0,<2->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (1.3.0)
+[2024-11-18T18:05:55.557+0000] {process_utils.py:190} INFO - Requirement already satisfied: importlib-resources in /home/***/.local/lib/python3.8/site-packages (from alembic!=1.10.0,<2->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (5.13.0)
+[2024-11-18T18:05:55.560+0000] {process_utils.py:190} INFO - Requirement already satisfied: wheel<1.0,>=0.23.0 in /tmp/venvro2x4xnt/lib/python3.8/site-packages (from astunparse>=1.6.0->tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (0.42.0)
+[2024-11-18T18:05:55.565+0000] {process_utils.py:190} INFO - Requirement already satisfied: urllib3<1.27,>=1.25.4 in /home/***/.local/lib/python3.8/site-packages (from botocore<1.32.0,>=1.31.0->boto3==1.28.0->-r /tmp/venvro2x4xnt/requirements.txt (line 1)) (1.26.18)
+[2024-11-18T18:05:55.579+0000] {process_utils.py:190} INFO - Requirement already satisfied: Werkzeug>=2.2.2 in /home/***/.local/lib/python3.8/site-packages (from Flask<4->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (2.2.3)
+[2024-11-18T18:05:55.580+0000] {process_utils.py:190} INFO - Requirement already satisfied: itsdangerous>=2.0 in /home/***/.local/lib/python3.8/site-packages (from Flask<4->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (2.1.2)
+[2024-11-18T18:05:55.595+0000] {process_utils.py:190} INFO - Requirement already satisfied: gitdb<5,>=4.0.1 in /home/***/.local/lib/python3.8/site-packages (from gitpython<4,>=2.1.0->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (4.0.11)
+[2024-11-18T18:05:55.621+0000] {process_utils.py:190} INFO - Requirement already satisfied: zipp>=0.5 in /home/***/.local/lib/python3.8/site-packages (from importlib-metadata!=4.7.0,<8,>=3.7.0->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (3.17.0)
+[2024-11-18T18:05:55.624+0000] {process_utils.py:190} INFO - Requirement already satisfied: MarkupSafe>=2.0 in /home/***/.local/lib/python3.8/site-packages (from Jinja2<4,>=2.11->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (2.1.3)
+[2024-11-18T18:05:55.648+0000] {process_utils.py:190} INFO - Requirement already satisfied: contourpy>=1.0.1 in /home/***/.local/lib/python3.8/site-packages (from matplotlib<4->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (1.1.1)
+[2024-11-18T18:05:55.648+0000] {process_utils.py:190} INFO - Requirement already satisfied: cycler>=0.10 in /home/***/.local/lib/python3.8/site-packages (from matplotlib<4->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (0.12.1)
+[2024-11-18T18:05:55.648+0000] {process_utils.py:190} INFO - Requirement already satisfied: fonttools>=4.22.0 in /home/***/.local/lib/python3.8/site-packages (from matplotlib<4->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (4.54.1)
+[2024-11-18T18:05:55.649+0000] {process_utils.py:190} INFO - Requirement already satisfied: kiwisolver>=1.0.1 in /home/***/.local/lib/python3.8/site-packages (from matplotlib<4->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (1.4.7)
+[2024-11-18T18:05:55.658+0000] {process_utils.py:190} INFO - Requirement already satisfied: pillow>=6.2.0 in /home/***/.local/lib/python3.8/site-packages (from matplotlib<4->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (10.4.0)
+[2024-11-18T18:05:55.659+0000] {process_utils.py:190} INFO - Requirement already satisfied: pyparsing>=2.3.1 in /home/***/.local/lib/python3.8/site-packages (from matplotlib<4->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (3.1.1)
+[2024-11-18T18:05:55.701+0000] {process_utils.py:190} INFO - Requirement already satisfied: charset-normalizer<4,>=2 in /home/***/.local/lib/python3.8/site-packages (from requests<3,>=2.17.3->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (3.3.2)
+[2024-11-18T18:05:55.702+0000] {process_utils.py:190} INFO - Requirement already satisfied: idna<4,>=2.5 in /home/***/.local/lib/python3.8/site-packages (from requests<3,>=2.17.3->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (3.6)
+[2024-11-18T18:05:55.702+0000] {process_utils.py:190} INFO - Requirement already satisfied: certifi>=2017.4.17 in /home/***/.local/lib/python3.8/site-packages (from requests<3,>=2.17.3->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (2023.11.17)
+[2024-11-18T18:05:55.924+0000] {process_utils.py:190} INFO - Requirement already satisfied: greenlet!=0.4.17 in /home/***/.local/lib/python3.8/site-packages (from sqlalchemy<3,>=1.4.0->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (3.0.3)
+[2024-11-18T18:05:55.943+0000] {process_utils.py:190} INFO - Requirement already satisfied: google-auth<3,>=1.6.3 in /home/***/.local/lib/python3.8/site-packages (from tensorboard<2.14,>=2.13->tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (2.26.2)
+[2024-11-18T18:05:55.962+0000] {process_utils.py:190} INFO - Collecting google-auth-oauthlib<1.1,>=0.5 (from tensorboard<2.14,>=2.13->tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.963+0000] {process_utils.py:190} INFO -   Using cached google_auth_oauthlib-1.0.0-py2.py3-none-any.whl.metadata (2.7 kB)
+[2024-11-18T18:05:55.995+0000] {process_utils.py:190} INFO - Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard<2.14,>=2.13->tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5))
+[2024-11-18T18:05:55.996+0000] {process_utils.py:190} INFO -   Using cached tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl.metadata (1.1 kB)
+[2024-11-18T18:05:56.140+0000] {process_utils.py:190} INFO - Requirement already satisfied: smmap<6,>=3.0.1 in /home/***/.local/lib/python3.8/site-packages (from gitdb<5,>=4.0.1->gitpython<4,>=2.1.0->mlflow==2.10.2->-r /tmp/venvro2x4xnt/requirements.txt (line 2)) (5.0.1)
+[2024-11-18T18:05:56.151+0000] {process_utils.py:190} INFO - Requirement already satisfied: cachetools<6.0,>=2.0.0 in /home/***/.local/lib/python3.8/site-packages (from google-auth<3,>=1.6.3->tensorboard<2.14,>=2.13->tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (5.3.2)
+[2024-11-18T18:05:56.151+0000] {process_utils.py:190} INFO - Requirement already satisfied: pyasn1-modules>=0.2.1 in /home/***/.local/lib/python3.8/site-packages (from google-auth<3,>=1.6.3->tensorboard<2.14,>=2.13->tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (0.3.0)
+[2024-11-18T18:05:56.152+0000] {process_utils.py:190} INFO - Requirement already satisfied: rsa<5,>=3.1.4 in /home/***/.local/lib/python3.8/site-packages (from google-auth<3,>=1.6.3->tensorboard<2.14,>=2.13->tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (4.9)
+[2024-11-18T18:05:56.160+0000] {process_utils.py:190} INFO - Requirement already satisfied: requests-oauthlib>=0.7.0 in /home/***/.local/lib/python3.8/site-packages (from google-auth-oauthlib<1.1,>=0.5->tensorboard<2.14,>=2.13->tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (1.3.1)
+[2024-11-18T18:05:56.291+0000] {process_utils.py:190} INFO - Requirement already satisfied: pyasn1<0.6.0,>=0.4.6 in /home/***/.local/lib/python3.8/site-packages (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard<2.14,>=2.13->tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (0.5.1)
+[2024-11-18T18:05:56.298+0000] {process_utils.py:190} INFO - Requirement already satisfied: oauthlib>=3.0.0 in /home/***/.local/lib/python3.8/site-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<1.1,>=0.5->tensorboard<2.14,>=2.13->tensorflow==2.13.0->-r /tmp/venvro2x4xnt/requirements.txt (line 5)) (3.2.2)
+[2024-11-18T18:05:56.330+0000] {process_utils.py:190} INFO - Using cached boto3-1.28.0-py3-none-any.whl (135 kB)
+[2024-11-18T18:05:56.331+0000] {process_utils.py:190} INFO - Using cached mlflow-2.10.2-py3-none-any.whl (19.5 MB)
+[2024-11-18T18:05:56.350+0000] {process_utils.py:190} INFO - Using cached tensorflow-2.13.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (524.1 MB)
+[2024-11-18T18:05:56.826+0000] {process_utils.py:190} INFO - Using cached absl_py-2.1.0-py3-none-any.whl (133 kB)
+[2024-11-18T18:05:56.827+0000] {process_utils.py:190} INFO - Using cached astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+[2024-11-18T18:05:56.829+0000] {process_utils.py:190} INFO - Using cached botocore-1.31.85-py3-none-any.whl (11.3 MB)
+[2024-11-18T18:05:56.841+0000] {process_utils.py:190} INFO - Using cached entrypoints-0.4-py3-none-any.whl (5.3 kB)
+[2024-11-18T18:05:56.842+0000] {process_utils.py:190} INFO - Using cached flatbuffers-24.3.25-py2.py3-none-any.whl (26 kB)
+[2024-11-18T18:05:56.844+0000] {process_utils.py:190} INFO - Using cached gast-0.4.0-py3-none-any.whl (9.8 kB)
+[2024-11-18T18:05:56.845+0000] {process_utils.py:190} INFO - Using cached google_pasta-0.2.0-py3-none-any.whl (57 kB)
+[2024-11-18T18:05:56.846+0000] {process_utils.py:190} INFO - Using cached h5py-3.11.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.3 MB)
+[2024-11-18T18:05:56.852+0000] {process_utils.py:190} INFO - Using cached keras-2.13.1-py3-none-any.whl (1.7 MB)
+[2024-11-18T18:05:56.854+0000] {process_utils.py:190} INFO - Using cached libclang-18.1.1-py2.py3-none-manylinux2010_x86_64.whl (24.5 MB)
+[2024-11-18T18:05:56.881+0000] {process_utils.py:190} INFO - Using cached numpy-1.24.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+[2024-11-18T18:05:56.900+0000] {process_utils.py:190} INFO - Using cached opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+[2024-11-18T18:05:56.902+0000] {process_utils.py:190} INFO - Using cached querystring_parser-1.2.4-py2.py3-none-any.whl (7.9 kB)
+[2024-11-18T18:05:56.903+0000] {process_utils.py:190} INFO - Using cached s3transfer-0.6.2-py3-none-any.whl (79 kB)
+[2024-11-18T18:05:56.904+0000] {process_utils.py:190} INFO - Using cached tensorboard-2.13.0-py3-none-any.whl (5.6 MB)
+[2024-11-18T18:05:56.910+0000] {process_utils.py:190} INFO - Using cached tensorflow_estimator-2.13.0-py2.py3-none-any.whl (440 kB)
+[2024-11-18T18:05:56.912+0000] {process_utils.py:190} INFO - Using cached tensorflow_io_gcs_filesystem-0.34.0-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (2.4 MB)
+[2024-11-18T18:05:56.916+0000] {process_utils.py:190} INFO - Using cached typing_extensions-4.5.0-py3-none-any.whl (27 kB)
+[2024-11-18T18:05:56.917+0000] {process_utils.py:190} INFO - Using cached google_auth_oauthlib-1.0.0-py2.py3-none-any.whl (18 kB)
+[2024-11-18T18:05:56.918+0000] {process_utils.py:190} INFO - Using cached tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl (6.6 MB)
+[2024-11-18T18:05:59.029+0000] {process_utils.py:190} INFO - Installing collected packages: libclang, flatbuffers, typing-extensions, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, querystring-parser, opt-einsum, numpy, keras, google-pasta, gast, entrypoints, astunparse, absl-py, h5py, botocore, s3transfer, google-auth-oauthlib, tensorboard, mlflow, boto3, tensorflow
+[2024-11-18T18:05:59.320+0000] {process_utils.py:190} INFO -   Attempting uninstall: typing-extensions
+[2024-11-18T18:05:59.321+0000] {process_utils.py:190} INFO -     Found existing installation: typing_extensions 4.9.0
+[2024-11-18T18:05:59.322+0000] {process_utils.py:190} INFO -     Not uninstalling typing-extensions at /home/***/.local/lib/python3.8/site-packages, outside environment /tmp/venvro2x4xnt
+[2024-11-18T18:05:59.322+0000] {process_utils.py:190} INFO -     Can't uninstall 'typing_extensions'. No files were found to uninstall.
+[2024-11-18T18:05:59.593+0000] {process_utils.py:190} INFO -   Attempting uninstall: numpy
+[2024-11-18T18:05:59.595+0000] {process_utils.py:190} INFO -     Found existing installation: numpy 1.24.4
+[2024-11-18T18:05:59.595+0000] {process_utils.py:190} INFO -     Not uninstalling numpy at /home/***/.local/lib/python3.8/site-packages, outside environment /tmp/venvro2x4xnt
+[2024-11-18T18:05:59.595+0000] {process_utils.py:190} INFO -     Can't uninstall 'numpy'. No files were found to uninstall.
+[2024-11-18T18:06:01.256+0000] {process_utils.py:190} INFO -   Attempting uninstall: botocore
+[2024-11-18T18:06:01.257+0000] {process_utils.py:190} INFO -     Found existing installation: botocore 1.35.44
+[2024-11-18T18:06:01.258+0000] {process_utils.py:190} INFO -     Not uninstalling botocore at /home/***/.local/lib/python3.8/site-packages, outside environment /tmp/venvro2x4xnt
+[2024-11-18T18:06:01.258+0000] {process_utils.py:190} INFO -     Can't uninstall 'botocore'. No files were found to uninstall.
+[2024-11-18T18:06:01.666+0000] {process_utils.py:190} INFO -   Attempting uninstall: s3transfer
+[2024-11-18T18:06:01.667+0000] {process_utils.py:190} INFO -     Found existing installation: s3transfer 0.10.3
+[2024-11-18T18:06:01.667+0000] {process_utils.py:190} INFO -     Not uninstalling s3transfer at /home/***/.local/lib/python3.8/site-packages, outside environment /tmp/venvro2x4xnt
+[2024-11-18T18:06:01.668+0000] {process_utils.py:190} INFO -     Can't uninstall 's3transfer'. No files were found to uninstall.
+[2024-11-18T18:06:01.691+0000] {process_utils.py:190} INFO -   Attempting uninstall: google-auth-oauthlib
+[2024-11-18T18:06:01.692+0000] {process_utils.py:190} INFO -     Found existing installation: google-auth-oauthlib 1.2.0
+[2024-11-18T18:06:01.692+0000] {process_utils.py:190} INFO -     Not uninstalling google-auth-oauthlib at /home/***/.local/lib/python3.8/site-packages, outside environment /tmp/venvro2x4xnt
+[2024-11-18T18:06:01.693+0000] {process_utils.py:190} INFO -     Can't uninstall 'google-auth-oauthlib'. No files were found to uninstall.
+[2024-11-18T18:06:01.896+0000] {process_utils.py:190} INFO -   Attempting uninstall: mlflow
+[2024-11-18T18:06:01.897+0000] {process_utils.py:190} INFO -     Found existing installation: mlflow 2.17.0
+[2024-11-18T18:06:01.898+0000] {process_utils.py:190} INFO -     Not uninstalling mlflow at /home/***/.local/lib/python3.8/site-packages, outside environment /tmp/venvro2x4xnt
+[2024-11-18T18:06:01.898+0000] {process_utils.py:190} INFO -     Can't uninstall 'mlflow'. No files were found to uninstall.
+[2024-11-18T18:06:02.465+0000] {process_utils.py:190} INFO -   Attempting uninstall: boto3
+[2024-11-18T18:06:02.466+0000] {process_utils.py:190} INFO -     Found existing installation: boto3 1.35.44
+[2024-11-18T18:06:02.467+0000] {process_utils.py:190} INFO -     Not uninstalling boto3 at /home/***/.local/lib/python3.8/site-packages, outside environment /tmp/venvro2x4xnt
+[2024-11-18T18:06:02.467+0000] {process_utils.py:190} INFO -     Can't uninstall 'boto3'. No files were found to uninstall.
+[2024-11-18T18:06:09.841+0000] {process_utils.py:190} INFO - ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+[2024-11-18T18:06:09.841+0000] {process_utils.py:190} INFO - aiobotocore 2.9.0 requires botocore<1.33.14,>=1.33.2, but you have botocore 1.31.85 which is incompatible.
+[2024-11-18T18:06:09.842+0000] {process_utils.py:190} INFO - azure-core 1.29.6 requires typing-extensions>=4.6.0, but you have typing-extensions 4.5.0 which is incompatible.
+[2024-11-18T18:06:09.842+0000] {process_utils.py:190} INFO - azure-mgmt-keyvault 10.3.1 requires typing-extensions>=4.6.0, but you have typing-extensions 4.5.0 which is incompatible.
+[2024-11-18T18:06:09.842+0000] {process_utils.py:190} INFO - azure-mgmt-network 27.0.0 requires typing-extensions>=4.6.0, but you have typing-extensions 4.5.0 which is incompatible.
+[2024-11-18T18:06:09.842+0000] {process_utils.py:190} INFO - graphene 3.4 requires typing-extensions<5,>=4.7.1, but you have typing-extensions 4.5.0 which is incompatible.
+[2024-11-18T18:06:09.842+0000] {process_utils.py:190} INFO - pydantic 2.5.3 requires typing-extensions>=4.6.1, but you have typing-extensions 4.5.0 which is incompatible.
+[2024-11-18T18:06:09.843+0000] {process_utils.py:190} INFO - pydantic-core 2.14.6 requires typing-extensions!=4.7.0,>=4.6.0, but you have typing-extensions 4.5.0 which is incompatible.
+[2024-11-18T18:06:09.843+0000] {process_utils.py:190} INFO - Successfully installed absl-py-2.1.0 astunparse-1.6.3 boto3-1.28.0 botocore-1.31.85 entrypoints-0.4 flatbuffers-24.3.25 gast-0.4.0 google-auth-oauthlib-1.0.0 google-pasta-0.2.0 h5py-3.11.0 keras-2.13.1 libclang-18.1.1 mlflow-2.10.2 numpy-1.24.3 opt-einsum-3.4.0 querystring-parser-1.2.4 s3transfer-0.6.2 tensorboard-2.13.0 tensorboard-data-server-0.7.2 tensorflow-2.13.0 tensorflow-estimator-2.13.0 tensorflow-io-gcs-filesystem-0.34.0 typing-extensions-4.5.0
+[2024-11-18T18:06:09.918+0000] {process_utils.py:190} INFO - 
+[2024-11-18T18:06:09.919+0000] {process_utils.py:190} INFO - [notice] A new release of pip is available: 23.3.1 -> 24.3.1
+[2024-11-18T18:06:09.919+0000] {process_utils.py:190} INFO - [notice] To update, run: python -m pip install --upgrade pip
+[2024-11-18T18:06:10.114+0000] {process_utils.py:182} INFO - Executing cmd: /tmp/venvro2x4xnt/bin/python /tmp/venv-callwia7yp7n/script.py /tmp/venv-callwia7yp7n/script.in /tmp/venv-callwia7yp7n/script.out /tmp/venv-callwia7yp7n/string_args.txt /tmp/venv-callwia7yp7n/termination.log
+[2024-11-18T18:06:10.117+0000] {process_utils.py:186} INFO - Output:
+[2024-11-18T18:06:11.067+0000] {process_utils.py:190} INFO - 2024-11-18 18:06:11.067488: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+[2024-11-18T18:06:11.068+0000] {process_utils.py:190} INFO - 2024-11-18 18:06:11.068581: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+[2024-11-18T18:06:11.089+0000] {process_utils.py:190} INFO - 2024-11-18 18:06:11.088910: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+[2024-11-18T18:06:11.089+0000] {process_utils.py:190} INFO - 2024-11-18 18:06:11.089211: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+[2024-11-18T18:06:11.089+0000] {process_utils.py:190} INFO - To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[2024-11-18T18:06:11.584+0000] {process_utils.py:190} INFO - 2024-11-18 18:06:11.584000: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[2024-11-18T18:06:12.438+0000] {process_utils.py:190} INFO - Traceback (most recent call last):
+[2024-11-18T18:06:12.439+0000] {process_utils.py:190} INFO -   File "/tmp/venv-callwia7yp7n/script.py", line 92, in <module>
+[2024-11-18T18:06:12.439+0000] {process_utils.py:190} INFO -     res = train_challenger_model(*arg_dict["args"], **arg_dict["kwargs"])
+[2024-11-18T18:06:12.439+0000] {process_utils.py:190} INFO -   File "/tmp/venv-callwia7yp7n/script.py", line 43, in train_challenger_model
+[2024-11-18T18:06:12.439+0000] {process_utils.py:190} INFO -     s3_client = boto3.client('s3', endpoint_url=MINIO_ENDPOINT,
+[2024-11-18T18:06:12.439+0000] {process_utils.py:190} INFO - NameError: name 'MINIO_ENDPOINT' is not defined
+[2024-11-18T18:06:13.232+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/base.py", line 241, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 400, in execute
+    return super().execute(context=serializable_context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 716, in execute_callable
+    result = self._execute_python_callable_in_subprocess(python_path)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 471, in _execute_python_callable_in_subprocess
+    raise AirflowException(error_msg) from None
+airflow.exceptions.AirflowException: Process returned non-zero exit status 1.
+name 'MINIO_ENDPOINT' is not defined
+[2024-11-18T18:06:13.234+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=spotify_retrain_challenge_model_v3, task_id=train_challenger_model, execution_date=20241118T180552, start_date=20241118T180552, end_date=20241118T180613
+[2024-11-18T18:06:13.241+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 69 for task train_challenger_model (Process returned non-zero exit status 1.
+name 'MINIO_ENDPOINT' is not defined; 4279)
+[2024-11-18T18:06:13.276+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-11-18T18:06:13.287+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

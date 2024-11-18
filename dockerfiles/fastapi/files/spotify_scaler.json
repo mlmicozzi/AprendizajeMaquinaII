@@ -1,0 +1,1 @@
+{"mean": [0.0, 0.000175, -46.448, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4000.0, 1957.0], "range": [0.983, 0.999825, 47.723, 0.918, 0.994, 0.994, 0.996, 0.991, 239.44, 513810.0, 63.0], "features": ["danceability", "energy", "loudness", "speechiness", "acousticness", "instrumentalness", "liveness", "valence", "tempo", "duration_ms", "year"]}
