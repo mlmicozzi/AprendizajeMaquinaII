@@ -1,5 +1,5 @@
-#from dotenv import load_dotenv
-#import os
+from dotenv import load_dotenv
+import os
 import requests
 import base64
 
@@ -9,9 +9,11 @@ def GetAccessToken() :
 
     :returns: Access token
     """
+    
+    load_dotenv()
 
-    client_id = 'dd5330a3e8a748aa8b74f19336b196f1' # guardar en .env
-    client_secret = 'ee6e6be9304c403fa6072e2f7c5d249c' # guardar en .env
+    client_id =  os.getenv('SPOTIFY_CLIENT_ID')
+    client_secret =  os.getenv('SPOTIFY_CLIENT_SECRET')
 
     # Codificar las credenciales en base64
     credentials = f"{client_id}:{client_secret}"
