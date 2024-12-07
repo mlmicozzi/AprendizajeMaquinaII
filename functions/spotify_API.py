@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 import os
 import requests
 import base64
+import pandas as pd
 
 def GetAccessToken() :
     """
@@ -144,9 +145,8 @@ def GetAudioFeatures(track_id: str) :
     url = f'https://api.spotify.com/v1/audio-features/{track_id}'
     
     access_token = GetAccessToken()
-    headers = {
-        'Authorization': f'Bearer {access_token}'
-    }
+
+    headers = {'Authorization': f'Bearer {access_token}'}
 
     response = requests.get(url, headers=headers)
     audio_features = response.json()
@@ -174,17 +174,18 @@ def GetAudiosFeatures(track_ids: list) :
     audio_features = response.json()
     return audio_features
 
-def JoinTrackInfo(track_info, audio_features) :
+def JoinTrackInfo(track_info) :
     """
     Devuelve un json con la track info y audio feature
 
     :param track_info: track info
     :type track_info: json
-    :param audio_features: audio feature
-    :type audio_features: json
     :returns: track info y audio features
     :rtype: json
     """
+
+    date = track_info['album']['release_date']
+    year = GetYear(date)
 
     new_data = {
         "track_id": track_info['id'],
@@ -194,19 +195,15 @@ def JoinTrackInfo(track_info, audio_features) :
         "track_popularity": track_info['popularity'],
         "track_album_id": track_info['album']['id'],
         "track_album_name": track_info['album']['name'],
-        "album_release_date": track_info['album']['release_date'],
-        "danceability": audio_features['danceability'],
-        "energy": audio_features["energy"],
-        "key": audio_features["key"],
-        "loudness": audio_features["loudness"],
-        "mode": audio_features["mode"],
-        "speechiness": audio_features["speechiness"],
-        "acousticness": audio_features["acousticness"],
-        "instrumentalness": audio_features["instrumentalness"],
-        "liveness": audio_features["liveness"],
-        "valence": audio_features["valence"],
-        "tempo": audio_features["tempo"],
-        "duration_ms": track_info['duration_ms'],
+        "year": year
     }
 
     return new_data
+
+def GetYear(date: str):
+    if len(date) == 4:
+        año = date
+        return año
+    else:
+        año = pd.to_datetime(date, errors='coerce').year
+        return año
