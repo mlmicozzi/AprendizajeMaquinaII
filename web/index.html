@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SpotAI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-nav">
+    <h1 class="logo">SpotAI</h1>
+  </header>
+  
+  <main class="content" >
+    <!-- Contenedor principal donde se alternarán las vistas -->
+    <div id="searchPage" class="page visible">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Busca una canción o artista...">
+        <button id="searchBtn">Buscar</button>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+
+      <div class="player-section" id="searchPlayerSection" style="display: none;">
+        <iframe id="searchPlayer" width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <button id="confirmBtn">Confirmar</button>
+      </div>
+    </div>
+
+    <div id="recommendationsPage" class="page">
+      <button class="back-btn" id="backBtn">Volver</button>
+      <h2>Recomendaciones para ti</h2>
+      <div class="recommendations-list" id="recommendationsList"></div>
+      <div class="player-section" id="recommendationsPlayerSection" style="display: none;">
+        <iframe id="recommendationsPlayer" width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div class="actions">
+        <button class="share-btn" id="shareBtn">Compartir</button>
+        <button class="add-to-spotify-btn" id="addToSpotifyBtn">Agregar playlist a mi Spotify</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
