@@ -1,124 +1,34 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Spotify Song Recommender</title>
-    <style>
-        /* General page styling */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        /* Container styling */
-        .container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-        }
-
-        /* Heading styling */
-        h1 {
-            color: #444;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 20px;
-            color: #666;
-        }
-
-        /* Dropdown and button styling */
-        select {
-            width: 80%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-bottom: 15px;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        /* Recommendations list styling */
-        h2 {
-            color: #444;
-            margin-bottom: 10px;
-            margin-top: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin: 5px 0;
-            padding: 10px;
-            font-size: 14px;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-        }
-
-        ul li strong {
-            font-weight: bold;
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 20px;
-            font-size: 12px;
-            color: #888;
-        }
-
-        footer a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SpotAI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Spotify Song Recommender</h1>
-        <p>Select a song to find similar recommendations:</p>
-        <select id="songSelector"></select>
-        <button onclick="getRecommendations()">Get Recommendations</button>
-        <h2>Top 5 Similar Songs:</h2>
-        <ul id="recommendationsList"></ul>
-    </div>
+    <header class="top-nav">
+      <h1 class="logo">SpotAI: Spotify Song Recommender</h1>
+    </header>
     
+    <main class="content" >
+    <!-- Contenedor principal donde se alternarán las vistas -->
+        <div id="searchPage" class="page visible">
+            <p>¿Qué música te gusta?</p>
+            <select id="songSelector">
+                <option value="" selected disabled>Seleccione una canción</option>
+            </select>
+            <br>
+            <button  class="share-btn" onclick="getRecommendations()">Recomendar</button>
+        <br>
+
+        <div id="recommendationsPage" class="page">
+            <h3>Recomendaciones para ti</h3>
+            <ul class="recommendations-list" id="recommendationsList"></ul>
+            <button class="back-btn" id="backBtn">Volver</button>
+        </div>
+    </main>
 
     <script>
         async function loadSongs() {

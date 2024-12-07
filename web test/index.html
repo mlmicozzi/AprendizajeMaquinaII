@@ -41,5 +41,47 @@
   </main>
 
   <script src="script.js"></script>
+
+  <script>
+    async function loadSongs() {
+        const response = await fetch("http://localhost:8800/get_songs/");
+        const data = await response.json();
+        const selector = document.getElementById("songSelector");
+
+        data.songs.forEach(song => {
+            const option = document.createElement("option");
+            option.value = song;
+            option.text = song;
+            selector.appendChild(option);
+        });
+    }
+
+    async function getRecommendations() {
+        const selectedSong = document.getElementById("songSelector").value;
+        const response = await fetch(`http://localhost:8800/predict_by_selection/?song_name=${encodeURIComponent(selectedSong)}`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: "" // No body needed for this endpoint
+        });
+
+        if (!response.ok) {
+            console.error("Failed to get recommendations", response.statusText);
+            return;
+        }
+
+        const data = await response.json();
+        const list = document.getElementById("recommendationsList");
+        list.innerHTML = ""; // Clear previous results
+
+        // Adjust how similar_songs is handled based on its structure
+        data.similar_songs.forEach((song, index) => {
+            const li = document.createElement("li");
+            li.textContent = `${index + 1}. "${song.track_name}" by ${song.track_artist} (Album: "${song.track_album_name}")`;
+            list.appendChild(li);
+        });
+    }
+
+    window.onload = loadSongs;
+</script>
 </body>
 </html>
