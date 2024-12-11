@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>SpotAI</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,22 +18,58 @@
     <main class="content" >
     <!-- Contenedor principal donde se alternarán las vistas -->
         <div id="searchPage" class="page visible">
-            <p>¿Qué música te gusta?</p>
-            <select id="songSelector">
+            <h4>¿Qué música te gusta?</h4>
+            <p>Te ayudaré a encontrar canciones similares</p>
+            <select id="songSelector" class="dropdown-list" placeholder="Seleccione una canción">
                 <option value="" selected disabled>Seleccione una canción</option>
+                <!-- Canciones dummy para desarrollo -->
+                <option value="blinding_lights">Blinding Lights - The Weeknd</option>
+                <option value="shape_of_you">Shape of You - Ed Sheeran</option>
+                <option value="uptown_funk">Uptown Funk - Mark Ronson ft. Bruno Mars</option>
+                <option value="rolling_in_the_deep">Rolling in the Deep - Adele</option>
+                <option value="despacito">Despacito - Luis Fonsi ft. Daddy Yankee</option>
+                <option value="someone_you_loved">Someone You Loved - Lewis Capaldi</option>
+                <option value="bohemian_rhapsody">Bohemian Rhapsody - Queen</option>
+                <option value="drivers_license">Drivers License - Olivia Rodrigo</option>
+                <option value="stressed_out">Stressed Out - Twenty One Pilots</option>
+                <option value="bad_guy">Bad Guy - Billie Eilish</option>
+                <option value="old_town_road">Old Town Road - Lil Nas X</option>
+                <option value="havana">Havana - Camila Cabello ft. Young Thug</option>
+                <option value="roar">Roar - Katy Perry</option>
+                <option value="all_of_me">All of Me - John Legend</option>
+                <option value="rockstar">Rockstar - Post Malone ft. 21 Savage</option>
+                <option value="sunflower">Sunflower - Post Malone ft. Swae Lee</option>
+                <option value="happy">Happy - Pharrell Williams</option>
+                <option value="bad_romance">Bad Romance - Lady Gaga</option>
+                <option value="closer">Closer - The Chainsmokers ft. Halsey</option>
+                <option value="hello">Hello - Adele</option>
             </select>
-            <br>
-            <button  class="share-btn" onclick="getRecommendations()">Recomendar</button>
-        <br>
-
+            <div style="padding: 20px;">
+                <button class="green-btn" onclick="getRecommendations();toggle(this)">Recomendar</button>
+                   
+            </div>
+        </div>
         <div id="recommendationsPage" class="page">
-            <h3>Recomendaciones para ti</h3>
-            <ul class="recommendations-list" id="recommendationsList"></ul>
-            <button class="back-btn" id="backBtn">Volver</button>
+            <h3>Recomendaciones parsonalizadas</h3>
+            <h4 class="no-bold">Estas canciones te van a gustar</h4>
+
+            <div id="song-container"></div>
+
+            <div style="">
+                <button class="white-btn" id="backBtn" onclick="toggle(this)">Volver</button>
+            </div>
+            <br>     
         </div>
     </main>
 
     <script>
+        $(document).ready(function () {
+            $('#songSelector').select2({
+                placeholder: "Seleccione una canción", // Placeholder visible
+                allowClear: true, // Opción para limpiar la selección
+            });
+        });
+
         async function loadSongs() {
             const response = await fetch("http://localhost:8800/get_songs/");
             const data = await response.json();
@@ -44,8 +83,39 @@
             });
         }
 
+        // Filtra las opciones según input de usuario
+        function filterOptions() {
+        const input = document.querySelector('.dropdown-input');
+        const filter = input.value.toLowerCase();
+        const dropdown = document.getElementById('songSelector');
+        const options = dropdown.options;
+        for (let i = 1; i < options.length; i++) { // Ignorar la primera opción (disabled)
+            const text = options[i].text.toLowerCase();
+            options[i].style.display = text.includes(filter) ? '' : 'none';
+        }
+        }
+
+        // Muestra la lista desplegable
+        function showDropdown() {
+        const dropdown = document.getElementById('songSelector');
+        if (!dropdown.classList.contains('show')) {
+            dropdown.classList.add('show');
+        }
+        }
+
+        // Ocultar la lista desplegable
+        document.addEventListener('click', function (event) {
+        const dropdown = document.getElementById('songSelector');
+        const input = document.querySelector('.dropdown-input');
+        if (!input.contains(event.target) && !dropdown.contains(event.target)) {
+            dropdown.classList.remove('show');
+        }
+        });
+
+        // Genera recomendaciones
         async function getRecommendations() {
             const selectedSong = document.getElementById("songSelector").value;
+            /*
             const response = await fetch(`http://localhost:8800/predict_by_selection/?song_name=${encodeURIComponent(selectedSong)}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -58,18 +128,138 @@
             }
 
             const data = await response.json();
-            const list = document.getElementById("recommendationsList");
+            */
+            
+
+            // Dummy para prueba de HTML
+            const data = {
+                "similar_songs": [
+                    {
+                    "track_name": "Blinding Lights",
+                    "track_artist": "The Weeknd",
+                    "track_album_name": "After Hours",
+                    "track_id": "0VjIjW4GlUZAMYd2vXMi3b"
+                    },
+                    {
+                    "track_name": "Shape of You",
+                    "track_artist": "Ed Sheeran",
+                    "track_album_name": "Divide",
+                    "track_id": "7qiZfU4dY1lWllzX7mPBI3"
+                    },
+                    {
+                    "track_name": "Dance Monkey",
+                    "track_artist": "Tones And I",
+                    "track_album_name": "The Kids Are Coming",
+                    "track_id": "2XU0oxnq2qxCpomAAuJY8K"
+                    },
+                    {
+                    "track_name": "Someone Like You",
+                    "track_artist": "Adele",
+                    "track_album_name": "21",
+                    "track_id": "4kflIGfjdZJW4ot2ioixTB"
+                    },
+                    {
+                    "track_name": "El Cantante",
+                    "track_artist": "Héctor Lavoe",
+                    "track_album_name": "Comedia",
+                    "track_id": "5Uve0jm1RgxKWzdSvncBDO"
+                    }
+                ]
+                };
+
+            const list = document.getElementById("song-container");
             list.innerHTML = ""; // Clear previous results
 
             // Adjust how similar_songs is handled based on its structure
             data.similar_songs.forEach((song, index) => {
-                const li = document.createElement("li");
-                li.textContent = `${index + 1}. "${song.track_name}" by ${song.track_artist} (Album: "${song.track_album_name}")`;
-                list.appendChild(li);
+                // Create container div for each song
+                const songDiv = document.createElement("div");
+                songDiv.className = "song-item";
+                songDiv.style.marginBottom = "20px"; // Espaciado entre canciones
+
+                // Add song text
+                const songText = document.createElement("div");
+                songText.className = "song-text";
+                songText.textContent = `${index + 1}. "${song.track_name}" by ${song.track_artist} (Album: "${song.track_album_name}")`;
+                songText.style.marginBottom = "10px"; // Espaciado entre texto y reproductor
+
+                // Create player section
+                const playerDiv = document.createElement("div");
+                playerDiv.className = "player-section";
+
+                const iframe = document.createElement("iframe");
+                iframe.width = "500";
+                iframe.height = "100";
+                iframe.frameBorder = "0";
+                iframe.allowTransparency = "true";
+                iframe.allow = "encrypted-media";
+
+                // Assuming song.track_id contains the unique identifier for the song
+                const spotifyBaseUrl = "https://open.spotify.com/embed/track/";
+                iframe.src = `${spotifyBaseUrl}${song.track_id}`;
+                playerDiv.appendChild(iframe);
+
+                // Append text and player to songDiv
+                songDiv.appendChild(songText);
+                songDiv.appendChild(playerDiv);
+
+                // Append songDiv to the main container
+                const list = document.getElementById("song-container"); // Replace with your container's ID
+                list.appendChild(songDiv);
             });
         }
+
+        $(document).ready(function() {
+            $('#songSelector').select2({
+                placeholder: "Escribe para buscar",
+                allowClear: true
+            });
+        });
+        
+        // Cambio de pantalla
+        function toggle(button) {
+            const element = document.getElementById("recommendationsPage");
+            const element2 = document.getElementById("searchPage");
+            console.log("Element found:", element);
+            console.log("Element found:", element2);
+            console.log("Toggle button clicked"); // Para depuración
+            console.log("Current hidden attribute:", element.hasAttribute("hidden"), element2.hasAttribute("hidden"));
+            if (element.classList.contains("visible")) {
+                element.classList.remove("visible"); // Oculta el div
+                console.log("Oculta página de búsqueda.");
+
+                element2.classList.add("visible"); // Oculta el div
+                console.log("Muestra página de reusltados.");
+                
+                // Encuentra el elemento por ID
+                const recommendations = document.getElementById("recommendationsPage");
+                if (recommendations) {
+                    recommendations.scrollIntoView({
+                        behavior: "smooth", // Animación suave
+                        block: "center",    // Centra el elemento en la vista
+                        inline: "nearest"   // Opcional, para alineación horizontal
+                    });
+                }
+            } else {
+                element.classList.add("visible"); // Muestra el div
+                console.log("Muestra página de búsqueda.");
+
+                element2.classList.remove("visible"); // Muestra el div
+                console.log("Oculta página de reusltados.");
+            }
+        }
+        
+        $(document).ready(function () {
+            $('#songSelector').select2({
+                placeholder: "Seleccione una canción", // Texto del placeholder
+                allowClear: true, // Habilita el botón para limpiar la selección
+            });
+        });
 
         window.onload = loadSongs;
     </script>
 </body>
 </html>
+
+
+

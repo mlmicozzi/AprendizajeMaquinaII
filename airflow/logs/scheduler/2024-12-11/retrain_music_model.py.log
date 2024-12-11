@@ -1,0 +1,14 @@
+[2024-12-11T22:41:35.228+0000] {processor.py:161} INFO - Started process (PID=37145) to work on /opt/airflow/dags/retrain_music_model.py
+[2024-12-11T22:41:35.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retrain_music_model.py for tasks to queue
+[2024-12-11T22:41:35.232+0000] {logging_mixin.py:188} INFO - [2024-12-11T22:41:35.231+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/retrain_music_model.py
+[2024-12-11T22:41:35.322+0000] {processor.py:840} INFO - DAG(s) 'spotify_retrain_challenge_model_v3' retrieved from /opt/airflow/dags/retrain_music_model.py
+[2024-12-11T22:41:35.353+0000] {logging_mixin.py:188} INFO - [2024-12-11T22:41:35.353+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-11T22:41:35.374+0000] {logging_mixin.py:188} INFO - [2024-12-11T22:41:35.374+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_retrain_challenge_model_v3 to 2024-12-10 00:00:00+00:00, run_after=2024-12-11 00:00:00+00:00
+[2024-12-11T22:41:35.398+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retrain_music_model.py took 0.174 seconds
+[2024-12-11T22:42:05.550+0000] {processor.py:161} INFO - Started process (PID=37155) to work on /opt/airflow/dags/retrain_music_model.py
+[2024-12-11T22:42:05.551+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retrain_music_model.py for tasks to queue
+[2024-12-11T22:42:05.553+0000] {logging_mixin.py:188} INFO - [2024-12-11T22:42:05.553+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/retrain_music_model.py
+[2024-12-11T22:42:05.654+0000] {processor.py:840} INFO - DAG(s) 'spotify_retrain_challenge_model_v3' retrieved from /opt/airflow/dags/retrain_music_model.py
+[2024-12-11T22:42:05.687+0000] {logging_mixin.py:188} INFO - [2024-12-11T22:42:05.687+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-11T22:42:05.709+0000] {logging_mixin.py:188} INFO - [2024-12-11T22:42:05.709+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_retrain_challenge_model_v3 to 2024-12-10 00:00:00+00:00, run_after=2024-12-11 00:00:00+00:00
+[2024-12-11T22:42:05.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retrain_music_model.py took 0.188 seconds
