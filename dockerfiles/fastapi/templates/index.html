@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="top-nav">
+    <header class="top-nav" id="section1">
       <img src="logo.png" alt="SpotAI Logo" class="logo-img"  style="width: auto; height: 60px;" />
       <h1 class="logo">·&nbsp;&nbsp;&nbsp;songs you'll love</h1>
     </header>
@@ -44,26 +44,25 @@
                 <option value="happy">Happy - Pharrell Williams</option>
                 <option value="bad_romance">Bad Romance - Lady Gaga</option>
                 <option value="closer">Closer - The Chainsmokers ft. Halsey</option>
-                <option value="hello">Hello - Adele</option>
-                 -->
+                <option value="hello">Hello - Adele</option>  -->
             </select>
-            <div style="padding: 20px;">
 
-                <button class="green-btn" id="recommendBtn" style="display:none;" onclick="getRecommendations();toggle(this)">Recomendar</button>
-                <!-- <button class="green-btn" onclick="getRecommendations();toggle(this)">Recomendar</button> -->
-                   
+            <div style="padding: 20px;">
+                <button class="green-btn" id="recommendBtn" style="display:none;" onclick="getRecommendations();updateText();toggle(this);scrollToSection(2)">Recomendar</button>
             </div>
         </div>
+
         <div id="recommendationsPage" class="page">
-            <h3>Recomendaciones parsonalizadas</h3>
-            <h4 class="no-bold">Estas canciones te van a gustar</h4>
+            <h3 id="section2">Recomendaciones parsonalizadas</h3>
+            <h4 id="recommendationHeading" class="no-bold">Estas canciones te van a gustar</h4>
 
             <div id="song-container"></div>
 
             <div>
-                <button class="white-btn" id="backBtn" onclick="toggle(this)">Volver</button>
+                <button class="white-btn" id="backBtn" onclick="toggle(this);scrollToSection(1)">Volver</button>
             </div>
-            <br>     
+            <div style="height: 20px; width: 100%;"></div>
+            
         </div>
     </main>
 
@@ -133,11 +132,11 @@
                 }
             });
         });
-
+            
         // Genera recomendaciones
         async function getRecommendations() {
             const selectedSong = document.getElementById("songSelector").value;
-            
+
             const response = await fetch(`http://localhost:8800/predict_by_selection/?song_name=${encodeURIComponent(selectedSong)}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -150,8 +149,8 @@
             }
             
             const data = await response.json();
-
             /*
+            
             // Dummy para prueba de HTML
             const data = {
                 "similar_songs": [
@@ -187,25 +186,48 @@
                     }
                 ]
                 };
+            
             */
-
             const list = document.getElementById("song-container");
             list.innerHTML = ""; // Clear previous results
 
             // Adjust how similar_songs is handled based on its structure
             data.similar_songs.forEach((song, index) => {
-                // Create container div for each song
+                
+                // Contenedor de la canción
                 const songDiv = document.createElement("div");
                 songDiv.className = "song-item";
-                songDiv.style.marginBottom = "20px"; // Espaciado entre canciones
+                songDiv.style.marginBottom = "10px";
 
-                // Add song text
+                // Texto descriptivo de la canción
                 const songText = document.createElement("div");
                 songText.className = "song-text";
-                songText.textContent = `${index + 1}. "${song.track_name}" by ${song.track_artist} (Album: "${song.track_album_name}")`;
-                songText.style.marginBottom = "10px"; // Espaciado entre texto y reproductor
+                
+                // Construye el texto + ícono de compartir en la misma línea
+                // 1. Crea el span con el texto
+                const songInfo = document.createElement("span");
+                songInfo.textContent = `${index + 1}º. "${song.track_name}" by ${song.track_artist} (Album: "${song.track_album_name}")`;
 
-                // Create player section
+                // 2. Crea el enlace <a> con la imagen de compartir
+                const shareLink = document.createElement("a");
+                const spotifyShareUrl = "https://open.spotify.com/track/";
+                shareLink.href = `${spotifyShareUrl}${song.track_id}`;
+                shareLink.target = "_blank"; // Opcional: abrir en nueva pestaña
+
+                // Imagen de compartir
+                const shareIcon = document.createElement("img");
+                shareIcon.src = "share.png"; // Debes tener este archivo en tu carpeta (o usar URL completa)
+                shareIcon.alt = "Compartir canción";
+                shareIcon.style.marginLeft = "10px"; // Espacio entre texto y el ícono
+
+                // 3. Añade la imagen al enlace
+                shareLink.appendChild(shareIcon);
+
+                // 4. Agrega el texto + enlace al mismo contenedor "songText"
+                songText.appendChild(songInfo);
+                songText.appendChild(shareLink);
+
+                // Sección para el reproductor
                 const playerDiv = document.createElement("div");
                 playerDiv.className = "player-section";
 
@@ -215,18 +237,16 @@
                 iframe.frameBorder = "0";
                 iframe.allowTransparency = "true";
                 iframe.allow = "encrypted-media";
-
-                // Assuming song.track_id contains the unique identifier for the song
                 const spotifyBaseUrl = "https://open.spotify.com/embed/track/";
-                iframe.src = `${spotifyBaseUrl}${song.track_id}`;
+                iframe.src = `${spotifyBaseUrl}${song.track_id}`; // Mismo track_id que el enlace de compartir
                 playerDiv.appendChild(iframe);
 
-                // Append text and player to songDiv
+                // Agrega los elementos al contenedor de la canción
                 songDiv.appendChild(songText);
                 songDiv.appendChild(playerDiv);
 
-                // Append songDiv to the main container
-                const list = document.getElementById("song-container"); // Replace with your container's ID
+                // Finalmente, agregar cada canción al contenedor principal
+                const list = document.getElementById("song-container"); 
                 list.appendChild(songDiv);
             });
         }
@@ -278,7 +298,39 @@
             });
         });
 
-        window.onload = loadSongs;
+
+        // Agrega canción seleccionada en <h4>
+        function updateText() {
+            const songSelector = document.getElementById("songSelector");
+            const selectedOption = songSelector.options[songSelector.selectedIndex]; // Obtiene la opción seleccionada
+
+            if (selectedOption && selectedOption.value) {
+                const selectedSong = selectedOption.text; // Obtiene el texto de la canción seleccionada
+                const heading = document.getElementById("recommendationHeading");
+                
+                // Asegúrate de usar innerHTML para permitir etiquetas HTML
+                heading.innerHTML = `Si te gusta "${selectedSong}",<br>estas canciones te van a gustar:`;
+            } else {
+                console.error("No se ha seleccionado ninguna canción.");
+            }
+        }
+
+        function scrollToSection(index) {
+            const sectionId = `section${index}`; // Construye el ID dinámico, como "section1"
+            const section = document.getElementById(sectionId); // Obtiene el elemento
+
+            if (section) {
+                section.scrollIntoView({
+                    behavior: "smooth", // Desplazamiento suave
+                    block: "start", // Alineación superior
+                    inline: "nearest"
+                });
+            } else {
+                console.error(`No se encontró la sección con ID ${sectionId}`);
+            }
+        }
+
+        window.onload = scrollToSection(1); loadSongs;
 
     </script>
 </body>

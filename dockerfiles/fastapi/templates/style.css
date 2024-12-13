@@ -249,10 +249,31 @@ body {
   .no-bold {
     font-weight: normal; /* Elimina la negrita */
   }
-  
+
+  .song-text {
+    display: flex; 
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Opcional: centra horizontalmente los elementos si el contenedor es más ancho */
+    margin-bottom: 10px;
+  }
+
+  .song-text span {
+    font-weight: 300; /* por ejemplo, normal */
+  }
+
+  .song-text a img {
+    width: 16px; /* Cambia este valor según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 10px; /* Espacio entre el texto y el ícono */
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Animación de transición */
+  }
+
+  .song-text a img:hover {
+      transform: scale(1.4); /* Agranda el botón ligeramente */
+  }
+
   /* Páginas */
-
-
   .page {
     display: none !important; /* Asegúrate de usar !important si otras reglas pueden sobrescribir esta */
     display: flex;
