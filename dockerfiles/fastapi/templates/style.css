@@ -16,7 +16,9 @@ body {
   
   .top-nav .logo {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 300;
+    font-style: italic; 
+    color: rgb(187, 186, 186);
   }
   
   .content {
@@ -249,29 +251,28 @@ body {
   }
   
   /* Páginas */
+
+
   .page {
     display: none !important; /* Asegúrate de usar !important si otras reglas pueden sobrescribir esta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Centers text */
+    box-sizing: border-box; /* Ensures padding is included in height */
+    padding: 20px; /* Optional for spacing */
   }
   
   .page.visible {
     display: block !important; 
   }
-
   
   #searchPage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh; /* Ocupa toda la altura de la ventana */
-    text-align: center; /* Opcional: centra el texto */
   }
 
   #recommendationsPage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh; /* Ocupa toda la altura de la ventana */
-    text-align: center; /* Opcional: centra el texto */
   }

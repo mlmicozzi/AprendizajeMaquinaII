@@ -30,31 +30,7 @@
       <button class="back-btn" id="backBtn">Volver</button>
       <h2>Recomendaciones para ti</h2>
       <div class="recommendations-list" id="recommendationsList"></div>
-// Adjust how similar_songs is handled based on its structure
-data.similar_songs.forEach((song, index) => {
-    const li = document.createElement("li");
-    li.textContent = `${index + 1}. "${song.track_name}" by ${song.track_artist} (Album: "${song.track_album_name}")`;
-
-    // Create player section
-    const playerDiv = document.createElement("div");
-    playerDiv.className = "player-section";
-    playerDiv.style.marginTop = "10px";
-
-    const iframe = document.createElement("iframe");
-    iframe.width = "300";
-    iframe.height = "80";
-    iframe.frameBorder = "0";
-    iframe.allowTransparency = "true";
-    iframe.allow = "encrypted-media";
-
-    // Assuming song.track_id contains the unique identifier for the song
-    const spotifyBaseUrl = "https://open.spotify.com/embed/track/";
-    iframe.src = `${spotifyBaseUrl}${song.track_id}`;
-
-    playerDiv.appendChild(iframe);
-    li.appendChild(playerDiv);
-    list.appendChild(li);
-});
+      
       <div class="actions">
         <button class="share-btn" id="shareBtn">Compartir</button>
         <button class="add-to-spotify-btn" id="addToSpotifyBtn">Agregar playlist a mi Spotify</button>
@@ -62,7 +38,6 @@ data.similar_songs.forEach((song, index) => {
     </div>
   </main>
 
-  <script src="script.js"></script>
 
   <script>
     async function loadSongs() {
@@ -83,7 +58,7 @@ data.similar_songs.forEach((song, index) => {
         const response = await fetch(`http://localhost:8800/predict_by_selection/?song_name=${encodeURIComponent(selectedSong)}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: "" // No body needed for this endpoint
+            body: "" // No se utiliza el body para este endpoint
         });
 
         if (!response.ok) {
@@ -93,9 +68,9 @@ data.similar_songs.forEach((song, index) => {
 
         const data = await response.json();
         const list = document.getElementById("recommendationsList");
-        list.innerHTML = ""; // Clear previous results
+        list.innerHTML = ""; // Limpiar resultados previos
 
-        // Adjust how similar_songs is handled based on its structure
+        // Visualiza las recomendaciones recibidas en el JSON
         data.similar_songs.forEach((song, index) => {
             const li = document.createElement("li");
             li.textContent = `${index + 1}. "${song.track_name}" by ${song.track_artist} (Album: "${song.track_album_name}")`;
@@ -104,6 +79,24 @@ data.similar_songs.forEach((song, index) => {
     }
 
     window.onload = loadSongs;
+
+    
+    window.onload = () => {
+      loadSongs();
+      
+      const selector = document.getElementById("songSelector");
+      const recommendBtn = document.getElementById("recommendBtn");
+
+      // Escucha el evento 'change' del selector
+      selector.addEventListener("change", () => {
+        // Si se ha seleccionado una opción distinta a la vacía, mostrar el botón
+        if (selector.value) {
+          recommendBtn.style.display = "inline-block";
+        } else {
+          recommendBtn.style.display = "none";
+        }
+      });
+    };
 </script>
 </body>
 </html>
