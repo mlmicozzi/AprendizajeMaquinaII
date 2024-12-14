@@ -25,26 +25,42 @@ Nos centraremos en el campo `track_popularity` y buscaremos su relación con otr
 
 El repositorio está compuesto por los siguientes archivos y directorios:
 
-- TPFinal.ipynb: Es el notebook principal del proyecto. Contiene:
-  - Exploración y Comprensión de los Datos
-  - Técnicas de Visualización
-  - Transformación de Variables y Selección de Features
-  - Reducción de la Dimensionalidad
-  - Entrenamiento de modelos
-  - Pruebas con PCA
-  - Conclusiones
+- Airflow: Es el directorio donde encontraremos los dags para procesar en airflow. Contiene:
+  - Entrenamiento y procesamiento de los datos
+  - Competencia entre modelos anteriores y nuevos modelos
 
-- Carpeta models: esta carperta contiene todos los modelos exportados para luego ser utilizados en el notebook TPFinal y realizar la evaluación de los mismos.
+- datasets: 
+  - En esta carpeta encontraremos los archivos .csv donde utlizados para nuestros modelos.
 
-- Notebooks: Contamos con distintos notebooks donde se entrenan y exportan los diferentes modelos.
-    - decisionTreeRegressor.ipynb
-    - KNeighborsRegressor.ipynb
-    - neuralNetwork.ipynb
-    - ridgeRegression.ipynb
-    - supportVectorRegressor.ipynb
+- Dockerfiles: Contamos con distintos notebooks donde se entrenan y exportan los diferentes modelos.
+    - airflow:
+      * Gestión de DAGS.
+    - fastapi:
+      * Aqui encontraremos la definicion de app.py desde donde controlamos todas nuestras API.
+    - mlflow:
+      * Getión de metricas de los modelos.
+    - postgres:
+      * Gestión de la base de datos
 
- - Carpeta datasets: contamos con distintas versiones del dataset de Spotify.
-     - spotify_songs.csv: dataset original descargado de Kaggle
-     - df_songs.csv: dateset original con las variables escaladas (se usó MinMaxScaler())
-     - df_pca6.csv: dataset de PCA con 6 componentes
-     - df_pca9.csv: dataset de PCA con 9 componentes 
+
+- functions:
+  - Fue desarrollada para este proyecto una API de spotify que nos permitia recuperar todos los atributos de una canción para mejorar aún más los modelos. Desafortunadamente el 27/11/2024 cambiaron las politicas empresariales y no pudimos avanzar con este proyecto.
+
+
+## Ejecución del Proyecto
+
+Para levantar el proyecto correr desde el root el comando:
+
+```
+docker compose --profile all up
+```
+
+Recomendaciones: 
+
+- Probar la siguiente ruta [text](http://localhost:8800/view/) en la misma podrán ver el resultado de nuestro trabajo de los ultimos 4 meses.
+
+- De todas formas, otros links utiles son:
+
+  - [text](http://localhost:9000) - MinIO
+  - [text](http://localhost:5000) - MLFlow
+  - [text](http://localhost:8080) - Airflow
