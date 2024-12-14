@@ -57,10 +57,10 @@ docker compose --profile all up
 
 Recomendaciones: 
 
-- Probar la siguiente ruta [text](http://localhost:8800/view/) en la misma podrán ver el resultado de nuestro trabajo de los ultimos 4 meses.
+- Probar la siguiente ruta [Spotify recommender](http://localhost:8800/view/) en la misma podrán ver el resultado de nuestro trabajo de los ultimos 4 meses.
 
 - De todas formas, otros links utiles son:
 
-  - [text](http://localhost:9000) - MinIO
-  - [text](http://localhost:5000) - MLFlow
-  - [text](http://localhost:8080) - Airflow
+  - [MinIO](http://localhost:9000) 
+  - [MLFlow](http://localhost:5000) 
+  - [Airflow](http://localhost:8080) 
