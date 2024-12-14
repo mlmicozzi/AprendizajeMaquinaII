@@ -61,16 +61,16 @@ Recomendaciones:
 
 - En caso de querer probar las predicciones en bache utilizar la url: [Predicción en bache](http://localhost:8800/predict_csv/). Se deja en este repositorio un .csv de ejemplo para tal caso.
 
-'''
+```
 curl -X POST "http://localhost:8800/predict_csv/" \
 -H "accept: application/json" \
 -H "Content-Type: multipart/form-data" \
 -F "file=@path/to/your/csv.csv"
-'''
+```
 
 Sample output:
 
-'''
+```
 {
     "message": "Predictions generated successfully",
     "predictions": [
@@ -82,7 +82,7 @@ Sample output:
         }
     ]
 }
-'''
+```
 
 
 - De todas formas, otros links utiles son:
