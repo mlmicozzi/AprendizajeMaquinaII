@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background-color: #121212;
+    color: #FFFFFF;
+  }
+  
+  .top-nav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #000000;
+    border-bottom: 1px solid #333;
+  }
+  
+  .top-nav .logo {
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic; 
+    color: rgb(187, 186, 186);
+  }
+  
+  .content {
+    padding: 20px;
+  }
+
+  /* Botones */
+  .search-bar button,
+  #confirmBtn,
+  .share-btn,
+  .add-to-spotify-btn,
+  #searchBtn {
+    padding: 10px 20px;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 20px;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .button {
+    padding: 10px 20px; /* Espacio interno: 10px arriba y abajo, 20px a los lados */
+    margin-bottom: 50px; /* Espacio externo debajo del botón */
+    font-size: 16px; /* Ajusta el tamaño del texto para mayor legibilidad */
+  }
+  
+  .green-btn {
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #1DB954; /* Color de fondo */
+    border-radius: 20px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cursor tipo mano */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 14px; /* Tamaño del texto */
+    transition: transform 0.1s ease, background-color 0.4s ease; /* Animación de transición */
+    border: none; /* Elimina bordes adicionales */
+    outline: none; /* Evita bordes externos al hacer clic */
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  }
+
+  .green-btn:hover {
+    background-color: #3ec26c; /* Color al posarse encima */
+    transform: scale(1.05); /* Agranda el botón ligeramente */
+    border-radius: 20px; /* Asegura que el borde redondeado se mantenga */
+  }
+  
+  .white-btn {
+    padding: 10px 20px;
+    background: none;
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+    font-size: 14px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    transition: transform 0.2s ease, background-color 0.5s ease; /* Animación de transición */
+  }
+
+  .white-btn:hover {
+    background-color: #d8d8d8; /* Color al posarse encima */
+    color: #1f1f1f;
+    transform: scale(1.05); /* Agranda el botón ligeramente */
+    border-radius: 20px; /* Asegura que el borde redondeado se mantenga */
+  }
+
+  /* Lista desplegable */
+  select {
+      appearance: none; /* Elimina el estilo predeterminado */
+      -webkit-appearance: none; /* Para navegadores basados en WebKit */
+      -moz-appearance: none; /* Para Firefox */
+      background: #282828;
+      color: #FFF;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    background: #282828;
+    color: #FFF;
+    outline: none;
+  }
+
+  .select2-container .select2-selection--single {
+      background: #282828; /* Fondo oscuro */
+      color: #FFF; /* Texto blanco */
+      border: 1px solid #333; /* Borde oscuro */
+      border-radius: 20px; /* Bordes redondeados */
+      font-size: 14px;
+  }
+
+  .select2-container .select2-selection--single .select2-selection__placeholder {
+      color: #888; /* Color del placeholder */
+  }
+
+  .select2-container .select2-selection--single .select2-selection__rendered {
+      color: #1DB954; /* Color del texto seleccionado */
+  }
+
+  .select2-container .select2-selection__clear {
+      color: #1DB954; /* Verde */
+      font-weight: bold; /* Opcional: negrita */
+      cursor: pointer; /* Asegura que el cursor sea un puntero */
+  }
+
+  .select2-container .select2-selection__clear:hover {
+      color: #3ec26c; /* Color más claro al pasar el cursor */
+  }
+
+  .select2-container .select2-results__option[aria-selected="true"] {
+    background: #444; /* Fondo gris oscuro */
+    color: #FFF; /* Texto blanco */
+  }
+
+  .select2-container .select2-results__option[aria-selected="true"]:hover {
+    color: #1DB954; /* Texto blanco */
+  }
+
+  .select2-dropdown {
+      background: #282828; /* Fondo oscuro */
+      color: #FFF; /* Texto blanco */
+      border: 1px solid #333; /* Borde oscuro */
+  }
+
+  .dropdown-container {
+      position: relative;
+      width: 300px;
+  }
+
+  .dropdown-input {
+      width: 300px;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      margin-right: 10px;
+      background: #282828; /* Fondo oscuro */
+      color: #FFF; /* Texto blanco */
+      outline: none;
+      box-sizing: border-box;
+  }
+
+  .dropdown-list {
+      position: absolute;
+      width: 300px;
+      max-height: 200px;
+      background: #282828; /* Fondo oscuro */
+      color: #FFF; /* Texto blanco */
+      border-radius: 20px; /* Bordes redondeados */
+      margin-top: 5px;
+      z-index: 10;
+      overflow-y: hidden; /* Evita que el contenido se desborde */
+      scrollbar-width: thin; /* Scroll delgado en Firefox */
+      scrollbar-color: #5a5a5a #282828; /* Colores del scroll */
+      z-index: 10;
+  }
+
+  .dropdown-list option {
+      padding: 10px;
+      cursor: pointer;
+      background: #282828; /* Fondo oscuro */
+      color: #FFF; /* Texto blanco */
+  }
+
+  /* Resultados */
+  .search-results .recommendation-item,
+  .recommendations-list .recommendation-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .hidden-markers li::marker {
+    content: ''; /* Reemplaza el marcador con nada */
+  }
+
+  .inline-list li {
+    display: inline-block; /* Cambia los elementos a un diseño en línea */
+  }
+
+  .album-cover {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .track-info h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .track-info p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #B3B3B3;
+  }
+  
+  .play-btn {
+    background: none;
+    color: #1DB954;
+    border: 1px solid #1DB954;
+    margin-left: 15px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .play-btn:hover {
+    background: #1DB954;
+    color: #FFF;
+  }
+  
+  .actions {
+    margin-top: 20px;
+  }
+
+  .no-bold {
+    font-weight: normal; /* Elimina la negrita */
+  }
+
+  .song-text {
+    display: flex; 
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Opcional: centra horizontalmente los elementos si el contenedor es más ancho */
+    margin-bottom: 10px;
+  }
+
+  .song-text span {
+    font-weight: 300; /* por ejemplo, normal */
+  }
+
+  .song-text a img {
+    width: 16px; /* Cambia este valor según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 10px; /* Espacio entre el texto y el ícono */
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Animación de transición */
+  }
+
+  .song-text a img:hover {
+      transform: scale(1.4); /* Agranda el botón ligeramente */
+  }
+
+  /* Páginas */
+  .page {
+    display: none !important; /* Asegúrate de usar !important si otras reglas pueden sobrescribir esta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Centers text */
+    box-sizing: border-box; /* Ensures padding is included in height */
+    padding: 20px; /* Optional for spacing */
+  }
+  
+  .page.visible {
+    display: block !important; 
+  }
+  
+  #searchPage {
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+  }
+
+  #recommendationsPage {
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+  }

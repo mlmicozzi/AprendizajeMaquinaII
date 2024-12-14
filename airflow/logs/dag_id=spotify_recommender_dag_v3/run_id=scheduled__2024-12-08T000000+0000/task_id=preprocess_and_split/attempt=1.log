@@ -1,0 +1,66 @@
+[2024-12-14T16:43:48.223+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spotify_recommender_dag_v3.preprocess_and_split scheduled__2024-12-08T00:00:00+00:00 [queued]>
+[2024-12-14T16:43:48.227+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spotify_recommender_dag_v3.preprocess_and_split scheduled__2024-12-08T00:00:00+00:00 [queued]>
+[2024-12-14T16:43:48.227+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-12-14T16:43:48.235+0000] {taskinstance.py:2191} INFO - Executing <Task(_PythonVirtualenvDecoratedOperator): preprocess_and_split> on 2024-12-08 00:00:00+00:00
+[2024-12-14T16:43:48.238+0000] {standard_task_runner.py:60} INFO - Started process 651 to run task
+[2024-12-14T16:43:48.240+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'spotify_recommender_dag_v3', 'preprocess_and_split', 'scheduled__2024-12-08T00:00:00+00:00', '--job-id', '184', '--raw', '--subdir', 'DAGS_FOLDER/music_process.py', '--cfg-path', '/tmp/tmpb8hgyo2w']
+[2024-12-14T16:43:48.241+0000] {standard_task_runner.py:88} INFO - Job 184: Subtask preprocess_and_split
+[2024-12-14T16:43:48.267+0000] {task_command.py:423} INFO - Running <TaskInstance: spotify_recommender_dag_v3.preprocess_and_split scheduled__2024-12-08T00:00:00+00:00 [running]> on host e3f469e6033c
+[2024-12-14T16:43:48.948+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Martín Horn' AIRFLOW_CTX_DAG_ID='spotify_recommender_dag_v3' AIRFLOW_CTX_TASK_ID='preprocess_and_split' AIRFLOW_CTX_EXECUTION_DATE='2024-12-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-08T00:00:00+00:00'
+[2024-12-14T16:43:48.950+0000] {process_utils.py:182} INFO - Executing cmd: /usr/local/bin/python -m virtualenv /tmp/venv95dovvtm --system-site-packages --python=python
+[2024-12-14T16:43:48.955+0000] {process_utils.py:186} INFO - Output:
+[2024-12-14T16:43:49.367+0000] {process_utils.py:190} INFO - created virtual environment CPython3.8.18.final.0-64 in 133ms
+[2024-12-14T16:43:49.367+0000] {process_utils.py:190} INFO -   creator CPython3Posix(dest=/tmp/venv95dovvtm, clear=False, no_vcs_ignore=False, global=True)
+[2024-12-14T16:43:49.367+0000] {process_utils.py:190} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/***/.local/share/virtualenv)
+[2024-12-14T16:43:49.368+0000] {process_utils.py:190} INFO -     added seed packages: pip==23.3.1, setuptools==69.0.2, wheel==0.42.0
+[2024-12-14T16:43:49.368+0000] {process_utils.py:190} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2024-12-14T16:43:49.387+0000] {process_utils.py:182} INFO - Executing cmd: /tmp/venv95dovvtm/bin/pip install -r /tmp/venv95dovvtm/requirements.txt
+[2024-12-14T16:43:49.392+0000] {process_utils.py:186} INFO - Output:
+[2024-12-14T16:43:50.418+0000] {process_utils.py:190} INFO - Collecting boto3==1.28.0 (from -r /tmp/venv95dovvtm/requirements.txt (line 1))
+[2024-12-14T16:43:50.419+0000] {process_utils.py:190} INFO -   Using cached boto3-1.28.0-py3-none-any.whl.metadata (6.6 kB)
+[2024-12-14T16:43:50.420+0000] {process_utils.py:190} INFO - Requirement already satisfied: pandas==2.0.3 in /home/***/.local/lib/python3.8/site-packages (from -r /tmp/venv95dovvtm/requirements.txt (line 2)) (2.0.3)
+[2024-12-14T16:43:50.421+0000] {process_utils.py:190} INFO - Requirement already satisfied: scikit-learn==1.3.2 in /home/***/.local/lib/python3.8/site-packages (from -r /tmp/venv95dovvtm/requirements.txt (line 3)) (1.3.2)
+[2024-12-14T16:43:50.887+0000] {process_utils.py:190} INFO - Collecting botocore<1.32.0,>=1.31.0 (from boto3==1.28.0->-r /tmp/venv95dovvtm/requirements.txt (line 1))
+[2024-12-14T16:43:50.888+0000] {process_utils.py:190} INFO -   Using cached botocore-1.31.85-py3-none-any.whl.metadata (6.1 kB)
+[2024-12-14T16:43:50.889+0000] {process_utils.py:190} INFO - Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /home/***/.local/lib/python3.8/site-packages (from boto3==1.28.0->-r /tmp/venv95dovvtm/requirements.txt (line 1)) (0.10.0)
+[2024-12-14T16:43:50.932+0000] {process_utils.py:190} INFO - Collecting s3transfer<0.7.0,>=0.6.0 (from boto3==1.28.0->-r /tmp/venv95dovvtm/requirements.txt (line 1))
+[2024-12-14T16:43:50.933+0000] {process_utils.py:190} INFO -   Using cached s3transfer-0.6.2-py3-none-any.whl.metadata (1.8 kB)
+[2024-12-14T16:43:50.985+0000] {process_utils.py:190} INFO - Requirement already satisfied: python-dateutil>=2.8.2 in /home/***/.local/lib/python3.8/site-packages (from pandas==2.0.3->-r /tmp/venv95dovvtm/requirements.txt (line 2)) (2.8.2)
+[2024-12-14T16:43:50.986+0000] {process_utils.py:190} INFO - Requirement already satisfied: pytz>=2020.1 in /home/***/.local/lib/python3.8/site-packages (from pandas==2.0.3->-r /tmp/venv95dovvtm/requirements.txt (line 2)) (2023.3.post1)
+[2024-12-14T16:43:50.986+0000] {process_utils.py:190} INFO - Requirement already satisfied: tzdata>=2022.1 in /home/***/.local/lib/python3.8/site-packages (from pandas==2.0.3->-r /tmp/venv95dovvtm/requirements.txt (line 2)) (2023.4)
+[2024-12-14T16:43:50.987+0000] {process_utils.py:190} INFO - Requirement already satisfied: numpy>=1.20.3 in /home/***/.local/lib/python3.8/site-packages (from pandas==2.0.3->-r /tmp/venv95dovvtm/requirements.txt (line 2)) (1.24.4)
+[2024-12-14T16:43:51.011+0000] {process_utils.py:190} INFO - Requirement already satisfied: scipy>=1.5.0 in /home/***/.local/lib/python3.8/site-packages (from scikit-learn==1.3.2->-r /tmp/venv95dovvtm/requirements.txt (line 3)) (1.10.1)
+[2024-12-14T16:43:51.011+0000] {process_utils.py:190} INFO - Requirement already satisfied: joblib>=1.1.1 in /home/***/.local/lib/python3.8/site-packages (from scikit-learn==1.3.2->-r /tmp/venv95dovvtm/requirements.txt (line 3)) (1.4.2)
+[2024-12-14T16:43:51.012+0000] {process_utils.py:190} INFO - Requirement already satisfied: threadpoolctl>=2.0.0 in /home/***/.local/lib/python3.8/site-packages (from scikit-learn==1.3.2->-r /tmp/venv95dovvtm/requirements.txt (line 3)) (3.5.0)
+[2024-12-14T16:43:51.034+0000] {process_utils.py:190} INFO - Requirement already satisfied: urllib3<1.27,>=1.25.4 in /home/***/.local/lib/python3.8/site-packages (from botocore<1.32.0,>=1.31.0->boto3==1.28.0->-r /tmp/venv95dovvtm/requirements.txt (line 1)) (1.26.18)
+[2024-12-14T16:43:51.038+0000] {process_utils.py:190} INFO - Requirement already satisfied: six>=1.5 in /home/***/.local/lib/python3.8/site-packages (from python-dateutil>=2.8.2->pandas==2.0.3->-r /tmp/venv95dovvtm/requirements.txt (line 2)) (1.16.0)
+[2024-12-14T16:43:51.282+0000] {process_utils.py:190} INFO - Using cached boto3-1.28.0-py3-none-any.whl (135 kB)
+[2024-12-14T16:43:51.283+0000] {process_utils.py:190} INFO - Using cached botocore-1.31.85-py3-none-any.whl (11.3 MB)
+[2024-12-14T16:43:51.294+0000] {process_utils.py:190} INFO - Using cached s3transfer-0.6.2-py3-none-any.whl (79 kB)
+[2024-12-14T16:43:53.019+0000] {process_utils.py:190} INFO - Installing collected packages: botocore, s3transfer, boto3
+[2024-12-14T16:43:53.020+0000] {process_utils.py:190} INFO -   Attempting uninstall: botocore
+[2024-12-14T16:43:53.021+0000] {process_utils.py:190} INFO -     Found existing installation: botocore 1.35.44
+[2024-12-14T16:43:53.021+0000] {process_utils.py:190} INFO -     Not uninstalling botocore at /home/***/.local/lib/python3.8/site-packages, outside environment /tmp/venv95dovvtm
+[2024-12-14T16:43:53.021+0000] {process_utils.py:190} INFO -     Can't uninstall 'botocore'. No files were found to uninstall.
+[2024-12-14T16:43:53.413+0000] {process_utils.py:190} INFO -   Attempting uninstall: s3transfer
+[2024-12-14T16:43:53.414+0000] {process_utils.py:190} INFO -     Found existing installation: s3transfer 0.10.3
+[2024-12-14T16:43:53.415+0000] {process_utils.py:190} INFO -     Not uninstalling s3transfer at /home/***/.local/lib/python3.8/site-packages, outside environment /tmp/venv95dovvtm
+[2024-12-14T16:43:53.415+0000] {process_utils.py:190} INFO -     Can't uninstall 's3transfer'. No files were found to uninstall.
+[2024-12-14T16:43:53.436+0000] {process_utils.py:190} INFO -   Attempting uninstall: boto3
+[2024-12-14T16:43:53.437+0000] {process_utils.py:190} INFO -     Found existing installation: boto3 1.35.44
+[2024-12-14T16:43:53.437+0000] {process_utils.py:190} INFO -     Not uninstalling boto3 at /home/***/.local/lib/python3.8/site-packages, outside environment /tmp/venv95dovvtm
+[2024-12-14T16:43:53.437+0000] {process_utils.py:190} INFO -     Can't uninstall 'boto3'. No files were found to uninstall.
+[2024-12-14T16:43:53.467+0000] {process_utils.py:190} INFO - ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+[2024-12-14T16:43:53.468+0000] {process_utils.py:190} INFO - aiobotocore 2.9.0 requires botocore<1.33.14,>=1.33.2, but you have botocore 1.31.85 which is incompatible.
+[2024-12-14T16:43:53.468+0000] {process_utils.py:190} INFO - Successfully installed boto3-1.28.0 botocore-1.31.85 s3transfer-0.6.2
+[2024-12-14T16:43:53.609+0000] {process_utils.py:190} INFO - 
+[2024-12-14T16:43:53.610+0000] {process_utils.py:190} INFO - [notice] A new release of pip is available: 23.3.1 -> 24.3.1
+[2024-12-14T16:43:53.610+0000] {process_utils.py:190} INFO - [notice] To update, run: python -m pip install --upgrade pip
+[2024-12-14T16:43:53.741+0000] {process_utils.py:182} INFO - Executing cmd: /tmp/venv95dovvtm/bin/python /tmp/venv-calludas_wxp/script.py /tmp/venv-calludas_wxp/script.in /tmp/venv-calludas_wxp/script.out /tmp/venv-calludas_wxp/string_args.txt /tmp/venv-calludas_wxp/termination.log
+[2024-12-14T16:43:53.746+0000] {process_utils.py:186} INFO - Output:
+[2024-12-14T16:43:54.206+0000] {process_utils.py:190} INFO - WARNING:root:/opt/***/logs/scheduler/latest already exists as a dir/file. Skip creating symlink.
+[2024-12-14T16:43:55.896+0000] {process_utils.py:190} INFO - Scaler saved to MinIO.
+[2024-12-14T16:43:56.144+0000] {python.py:201} INFO - Done. Returned value was: Data preprocessed and saved.
+[2024-12-14T16:43:56.158+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=spotify_recommender_dag_v3, task_id=preprocess_and_split, execution_date=20241208T000000, start_date=20241214T164348, end_date=20241214T164356
+[2024-12-14T16:43:56.176+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-12-14T16:43:56.186+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

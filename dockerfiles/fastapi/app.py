@@ -276,8 +276,8 @@ async def get_song_list():
     if song_dataset is None:
         raise HTTPException(status_code=500, detail="Dataset not loaded")
     
-    # Extract all song names
-    song_names = song_dataset['track_name'].dropna().unique().tolist()
+    # Extract some song names. Otherwise it crashes! But you can try other songs
+    song_names = sorted(song_dataset['track_name'].dropna().unique().tolist())[:1000]
     return {"songs": song_names}
 
 @app.post("/predict_by_selection/")
@@ -385,7 +385,7 @@ async def predict_by_selection(song_name: str, num_pred: int = 5):
 
     # Build a result payload
     results = {
-        "similar_songs": similar_songs[["track_name", "track_artist", "track_album_name"]].to_dict(orient="records"),
+        "similar_songs": similar_songs[["track_id", "track_name", "track_artist", "track_album_name"]].to_dict(orient="records"),
         "similarity_scores": [similarities[idx] for idx in valid_indices],
         "comparison": comparison_df.round(3).to_dict(orient="index")
     }

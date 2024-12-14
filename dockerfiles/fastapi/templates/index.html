@@ -5,15 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>SpotAI</title>
-    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="icon" href="/static/icon.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <header class="top-nav" id="section1">
-      <img src="logo.png" alt="SpotAI Logo" class="logo-img"  style="width: auto; height: 60px;" />
+      <img src="/static/logo.png" alt="SpotAI Logo" class="logo-img"  style="width: auto; height: 60px;" />
       <h1 class="logo">·&nbsp;&nbsp;&nbsp;songs you'll love</h1>
     </header>
     
@@ -216,7 +216,7 @@
 
                 // Imagen de compartir
                 const shareIcon = document.createElement("img");
-                shareIcon.src = "share.png"; // Debes tener este archivo en tu carpeta (o usar URL completa)
+                shareIcon.src = "/static/share.png"; // Debes tener este archivo en tu carpeta (o usar URL completa)
                 shareIcon.alt = "Compartir canción";
                 shareIcon.style.marginLeft = "10px"; // Espacio entre texto y el ícono
 
@@ -330,7 +330,10 @@
             }
         }
 
-        window.onload = scrollToSection(1); loadSongs;
+        window.onload = function () {
+                scrollToSection(1);
+                loadSongs();
+            };
 
     </script>
 </body>

@@ -1,0 +1,44 @@
+[2024-12-14T16:31:18.040+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: spotify_retrain_challenge_model_v3.train_challenger_model scheduled__2024-12-13T00:00:00+00:00 [queued]>
+[2024-12-14T16:31:18.044+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: spotify_retrain_challenge_model_v3.train_challenger_model scheduled__2024-12-13T00:00:00+00:00 [queued]>
+[2024-12-14T16:31:18.045+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-12-14T16:31:18.052+0000] {taskinstance.py:2191} INFO - Executing <Task(_PythonVirtualenvDecoratedOperator): train_challenger_model> on 2024-12-13 00:00:00+00:00
+[2024-12-14T16:31:18.055+0000] {standard_task_runner.py:60} INFO - Started process 258 to run task
+[2024-12-14T16:31:18.057+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'spotify_retrain_challenge_model_v3', 'train_challenger_model', 'scheduled__2024-12-13T00:00:00+00:00', '--job-id', '177', '--raw', '--subdir', 'DAGS_FOLDER/retrain_music_model.py', '--cfg-path', '/tmp/tmpxtma37ab']
+[2024-12-14T16:31:18.058+0000] {standard_task_runner.py:88} INFO - Job 177: Subtask train_challenger_model
+[2024-12-14T16:31:18.084+0000] {task_command.py:423} INFO - Running <TaskInstance: spotify_retrain_challenge_model_v3.train_challenger_model scheduled__2024-12-13T00:00:00+00:00 [running]> on host 48d6c33eecc1
+[2024-12-14T16:31:18.130+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Martín Horn' AIRFLOW_CTX_DAG_ID='spotify_retrain_challenge_model_v3' AIRFLOW_CTX_TASK_ID='train_challenger_model' AIRFLOW_CTX_EXECUTION_DATE='2024-12-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-13T00:00:00+00:00'
+[2024-12-14T16:31:18.131+0000] {process_utils.py:182} INFO - Executing cmd: /usr/local/bin/python -m virtualenv /tmp/venv1z0t_vtr --system-site-packages --python=python
+[2024-12-14T16:31:18.135+0000] {process_utils.py:186} INFO - Output:
+[2024-12-14T16:31:18.471+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-12-14T16:31:18.474+0000] {process_utils.py:131} INFO - Sending 15 to group 258. PIDs of all processes in the group: [262, 258]
+[2024-12-14T16:31:18.475+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 258
+[2024-12-14T16:31:18.475+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-12-14T16:31:18.494+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/base.py", line 241, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 400, in execute
+    return super().execute(context=serializable_context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 714, in execute_callable
+    self._prepare_venv(tmp_path)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 626, in _prepare_venv
+    prepare_virtualenv(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/python_virtualenv.py", line 104, in prepare_virtualenv
+    execute_in_subprocess(virtualenv_cmd)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/process_utils.py", line 171, in execute_in_subprocess
+    execute_in_subprocess_with_kwargs(cmd, cwd=cwd)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/process_utils.py", line 189, in execute_in_subprocess_with_kwargs
+    for line in iter(proc.stdout.readline, b""):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2452, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-12-14T16:31:18.498+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=spotify_retrain_challenge_model_v3, task_id=train_challenger_model, execution_date=20241213T000000, start_date=20241214T163118, end_date=20241214T163118
+[2024-12-14T16:31:18.508+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 177 for task train_challenger_model (Task received SIGTERM signal; 258)
+[2024-12-14T16:31:18.527+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=258, status='terminated', exitcode=1, started='16:31:17') (258) terminated with exit code 1
+[2024-12-14T16:31:18.528+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=262, status='terminated', started='16:31:17') (262) terminated with exit code None
+[2024-12-14T16:31:18.528+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 143
+[2024-12-14T16:31:18.543+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

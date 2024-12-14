@@ -1,0 +1,630 @@
+[2024-12-14T16:31:17.813+0000] {processor.py:161} INFO - Started process (PID=243) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:31:17.814+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:31:17.814+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:31:17.814+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:31:17.834+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:31:17.921+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:31:17.921+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:31:17.935+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:31:17.934+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:31:17.950+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.139 seconds
+[2024-12-14T16:43:36.050+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:43:36.050+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:43:36.050+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:43:36.050+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:43:36.070+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:43:36.186+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:43:36.185+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:43:36.198+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:43:36.198+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:43:36.210+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.162 seconds
+[2024-12-14T16:44:06.366+0000] {processor.py:161} INFO - Started process (PID=821) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:44:06.367+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:44:06.367+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:44:06.367+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:44:06.382+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:44:06.400+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:44:06.399+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:44:06.413+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:44:06.412+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:44:06.423+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.059 seconds
+[2024-12-14T16:44:36.565+0000] {processor.py:161} INFO - Started process (PID=866) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:44:36.565+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:44:36.566+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:44:36.566+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:44:36.579+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:44:36.599+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:44:36.599+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:44:36.613+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:44:36.613+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:44:36.634+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.071 seconds
+[2024-12-14T16:45:06.781+0000] {processor.py:161} INFO - Started process (PID=876) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:45:06.782+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:45:06.782+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:45:06.782+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:45:06.797+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:45:06.813+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:45:06.813+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:45:06.827+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:45:06.827+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:45:06.838+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.059 seconds
+[2024-12-14T16:49:55.225+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:49:55.225+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:49:55.226+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:49:55.226+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:49:55.246+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:49:55.355+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:49:55.355+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:49:55.367+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:49:55.367+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:49:55.377+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.154 seconds
+[2024-12-14T16:50:25.500+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:50:25.501+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:50:25.501+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:50:25.501+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:50:25.516+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:50:25.532+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:50:25.532+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:50:25.544+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:50:25.544+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:50:25.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.057 seconds
+[2024-12-14T16:50:55.851+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:50:55.852+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:50:55.853+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:50:55.852+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:50:55.867+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:50:55.884+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:50:55.884+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:50:55.897+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:50:55.897+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:50:55.908+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.059 seconds
+[2024-12-14T16:51:26.222+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:51:26.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:51:26.223+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:51:26.223+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:51:26.241+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:51:26.256+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:51:26.256+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:51:26.269+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:51:26.269+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:51:26.279+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.059 seconds
+[2024-12-14T16:51:56.591+0000] {processor.py:161} INFO - Started process (PID=354) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:51:56.591+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:51:56.592+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:51:56.592+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:51:56.605+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:51:56.620+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:51:56.620+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:51:56.632+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:51:56.632+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:51:56.642+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.053 seconds
+[2024-12-14T16:52:26.974+0000] {processor.py:161} INFO - Started process (PID=364) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:52:26.974+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:52:26.975+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:52:26.975+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:52:26.991+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:52:27.007+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:52:27.007+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:52:27.021+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:52:27.020+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:52:27.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.058 seconds
+[2024-12-14T16:52:57.343+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:52:57.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:52:57.344+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:52:57.344+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:52:57.357+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:52:57.371+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:52:57.371+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:52:57.383+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:52:57.383+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:52:57.393+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.051 seconds
+[2024-12-14T16:53:27.752+0000] {processor.py:161} INFO - Started process (PID=419) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:53:27.753+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:53:27.754+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:53:27.753+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:53:27.768+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:53:27.787+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:53:27.787+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:53:27.802+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:53:27.802+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:53:27.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.064 seconds
+[2024-12-14T16:53:58.134+0000] {processor.py:161} INFO - Started process (PID=464) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:53:58.134+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:53:58.135+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:53:58.135+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:53:58.147+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:53:58.162+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:53:58.162+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:53:58.175+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:53:58.174+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:53:58.185+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.052 seconds
+[2024-12-14T16:54:28.544+0000] {processor.py:161} INFO - Started process (PID=474) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:54:28.544+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:54:28.545+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:54:28.545+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:54:28.557+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:54:28.572+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:54:28.572+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:54:28.586+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:54:28.586+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:54:28.598+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.056 seconds
+[2024-12-14T16:54:58.908+0000] {processor.py:161} INFO - Started process (PID=519) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:54:58.908+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:54:58.909+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:54:58.909+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:54:58.922+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:54:58.937+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:54:58.937+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:54:58.949+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:54:58.949+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:54:58.960+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.053 seconds
+[2024-12-14T16:55:29.240+0000] {processor.py:161} INFO - Started process (PID=529) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:55:29.240+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:55:29.241+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:55:29.241+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:55:29.252+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:55:29.267+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:55:29.267+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:55:29.278+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:55:29.278+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:55:29.287+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.049 seconds
+[2024-12-14T16:55:59.643+0000] {processor.py:161} INFO - Started process (PID=574) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:55:59.644+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:55:59.644+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:55:59.644+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:55:59.659+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:55:59.675+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:55:59.674+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:55:59.687+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:55:59.687+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:55:59.698+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.056 seconds
+[2024-12-14T16:56:30.017+0000] {processor.py:161} INFO - Started process (PID=584) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:56:30.017+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:56:30.018+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:56:30.018+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:56:30.031+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:56:30.047+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:56:30.047+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:56:30.059+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:56:30.059+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:56:30.069+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.054 seconds
+[2024-12-14T16:57:00.406+0000] {processor.py:161} INFO - Started process (PID=629) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:57:00.406+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:57:00.407+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:57:00.407+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:57:00.420+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:57:00.436+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:57:00.436+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:57:00.447+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:57:00.447+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:57:00.459+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.054 seconds
+[2024-12-14T16:57:30.850+0000] {processor.py:161} INFO - Started process (PID=639) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:57:30.851+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:57:30.852+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:57:30.852+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:57:30.896+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:57:30.912+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:57:30.912+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:57:30.930+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:57:30.929+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:57:30.948+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.099 seconds
+[2024-12-14T16:58:01.139+0000] {processor.py:161} INFO - Started process (PID=684) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:58:01.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:58:01.140+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:58:01.140+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:58:01.154+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:58:01.170+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:58:01.170+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:58:01.182+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:58:01.182+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:58:01.191+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.054 seconds
+[2024-12-14T16:58:31.476+0000] {processor.py:161} INFO - Started process (PID=694) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:58:31.477+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:58:31.477+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:58:31.477+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:58:31.491+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:58:31.506+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:58:31.505+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:58:31.518+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:58:31.517+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:58:31.527+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.052 seconds
+[2024-12-14T16:59:01.831+0000] {processor.py:161} INFO - Started process (PID=739) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:59:01.832+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:59:01.833+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:59:01.832+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:59:01.847+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:59:01.861+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:59:01.861+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:59:01.872+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:59:01.872+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:59:01.883+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.053 seconds
+[2024-12-14T16:59:32.204+0000] {processor.py:161} INFO - Started process (PID=749) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T16:59:32.204+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T16:59:32.205+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:59:32.205+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T16:59:32.218+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T16:59:32.233+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:59:32.233+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T16:59:32.245+0000] {logging_mixin.py:188} INFO - [2024-12-14T16:59:32.245+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T16:59:32.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.054 seconds
+[2024-12-14T17:00:02.599+0000] {processor.py:161} INFO - Started process (PID=794) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:00:02.600+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:00:02.600+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:00:02.600+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:00:02.614+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:00:02.631+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:00:02.631+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:00:02.644+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:00:02.644+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:00:02.656+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.058 seconds
+[2024-12-14T17:00:32.854+0000] {processor.py:161} INFO - Started process (PID=804) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:00:32.854+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:00:32.855+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:00:32.855+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:00:32.869+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:00:32.887+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:00:32.887+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:00:32.899+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:00:32.899+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:00:32.909+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.057 seconds
+[2024-12-14T17:01:03.268+0000] {processor.py:161} INFO - Started process (PID=823) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:01:03.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:01:03.269+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:01:03.268+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:01:03.298+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:01:03.314+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:01:03.314+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:01:03.327+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:01:03.327+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:01:03.340+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.074 seconds
+[2024-12-14T17:01:33.686+0000] {processor.py:161} INFO - Started process (PID=860) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:01:33.687+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:01:33.687+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:01:33.687+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:01:33.700+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:01:33.715+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:01:33.714+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:01:33.726+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:01:33.726+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:01:33.736+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.051 seconds
+[2024-12-14T17:02:04.081+0000] {processor.py:161} INFO - Started process (PID=870) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:02:04.081+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:02:04.082+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:02:04.082+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:02:04.096+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:02:04.111+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:02:04.111+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:02:04.123+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:02:04.123+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:02:04.133+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.054 seconds
+[2024-12-14T17:02:34.458+0000] {processor.py:161} INFO - Started process (PID=915) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:02:34.458+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:02:34.459+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:02:34.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:02:34.470+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:02:34.486+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:02:34.486+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:02:34.498+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:02:34.498+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:02:34.509+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.052 seconds
+[2024-12-14T17:03:04.851+0000] {processor.py:161} INFO - Started process (PID=925) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:03:04.851+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:03:04.852+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:03:04.852+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:03:04.864+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:03:04.880+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:03:04.880+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:03:04.891+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:03:04.891+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:03:04.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.054 seconds
+[2024-12-14T17:03:35.210+0000] {processor.py:161} INFO - Started process (PID=970) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:03:35.211+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:03:35.212+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:03:35.211+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:03:35.223+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:03:35.239+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:03:35.239+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:03:35.251+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:03:35.251+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:03:35.261+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.052 seconds
+[2024-12-14T17:04:05.552+0000] {processor.py:161} INFO - Started process (PID=980) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:04:05.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:04:05.554+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:04:05.554+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:04:05.570+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:04:05.585+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:04:05.585+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:04:05.597+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:04:05.597+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:04:05.607+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.056 seconds
+[2024-12-14T17:04:35.967+0000] {processor.py:161} INFO - Started process (PID=1025) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:04:35.968+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:04:35.968+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:04:35.968+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:04:36.014+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:04:36.032+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:04:36.032+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:04:36.044+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:04:36.044+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:04:36.056+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.090 seconds
+[2024-12-14T17:05:06.399+0000] {processor.py:161} INFO - Started process (PID=1035) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:05:06.400+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:05:06.400+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:05:06.400+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:05:06.414+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:05:06.428+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:05:06.428+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:05:06.440+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:05:06.440+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:05:06.450+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.053 seconds
+[2024-12-14T17:05:36.768+0000] {processor.py:161} INFO - Started process (PID=1080) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:05:36.768+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:05:36.769+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:05:36.769+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:05:36.792+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:05:36.807+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:05:36.807+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:05:36.820+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:05:36.819+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:05:36.830+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.064 seconds
+[2024-12-14T17:06:07.128+0000] {processor.py:161} INFO - Started process (PID=1090) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:06:07.129+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:06:07.130+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:06:07.129+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:06:07.141+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:06:07.156+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:06:07.156+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:06:07.168+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:06:07.168+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:06:07.178+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.051 seconds
+[2024-12-14T17:06:37.468+0000] {processor.py:161} INFO - Started process (PID=1135) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:06:37.469+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:06:37.469+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:06:37.469+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:06:37.483+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:06:37.500+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:06:37.500+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:06:37.511+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:06:37.511+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:06:37.521+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.054 seconds
+[2024-12-14T17:07:07.842+0000] {processor.py:161} INFO - Started process (PID=1145) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:07:07.842+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:07:07.843+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:07:07.843+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:07:07.858+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:07:07.874+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:07:07.873+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:07:07.886+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:07:07.886+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:07:07.896+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.056 seconds
+[2024-12-14T17:07:38.127+0000] {processor.py:161} INFO - Started process (PID=1190) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:07:38.128+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:07:38.129+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:07:38.128+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:07:38.141+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:07:38.158+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:07:38.158+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:07:38.173+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:07:38.173+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:07:38.183+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.057 seconds
+[2024-12-14T17:08:08.399+0000] {processor.py:161} INFO - Started process (PID=1200) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:08:08.400+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:08:08.400+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:08:08.400+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:08:08.411+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:08:08.425+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:08:08.425+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:08:08.437+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:08:08.437+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:08:08.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.050 seconds
+[2024-12-14T17:08:38.699+0000] {processor.py:161} INFO - Started process (PID=1245) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:08:38.700+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:08:38.700+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:08:38.700+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:08:38.714+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:08:38.729+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:08:38.729+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:08:38.741+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:08:38.741+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:08:38.751+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.053 seconds
+[2024-12-14T17:09:08.963+0000] {processor.py:161} INFO - Started process (PID=1255) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:09:08.963+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:09:08.964+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:09:08.964+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:09:08.981+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:09:08.996+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:09:08.996+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:09:09.008+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:09:09.008+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:09:09.019+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.057 seconds
+[2024-12-14T17:09:39.224+0000] {processor.py:161} INFO - Started process (PID=1300) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:09:39.224+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:09:39.225+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:09:39.225+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:09:39.238+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:09:39.253+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:09:39.252+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:09:39.265+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:09:39.264+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:09:39.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.052 seconds
+[2024-12-14T17:10:09.512+0000] {processor.py:161} INFO - Started process (PID=1310) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:10:09.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:10:09.514+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:10:09.513+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:10:09.530+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:10:09.545+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:10:09.545+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:10:09.557+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:10:09.557+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:10:09.568+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.057 seconds
+[2024-12-14T17:10:39.790+0000] {processor.py:161} INFO - Started process (PID=1355) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:10:39.790+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:10:39.791+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:10:39.791+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:10:39.806+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:10:39.822+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:10:39.822+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:10:39.835+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:10:39.834+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:10:39.845+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.057 seconds
+[2024-12-14T17:11:10.084+0000] {processor.py:161} INFO - Started process (PID=1365) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:11:10.085+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:11:10.085+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:11:10.085+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:11:10.097+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:11:10.113+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:11:10.112+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:11:10.125+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:11:10.125+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:11:10.180+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.097 seconds
+[2024-12-14T17:11:40.313+0000] {processor.py:161} INFO - Started process (PID=1410) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:11:40.314+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:11:40.314+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:11:40.314+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:11:40.327+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:11:40.342+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:11:40.342+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:11:40.355+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:11:40.354+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:11:40.366+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.055 seconds
+[2024-12-14T17:12:10.630+0000] {processor.py:161} INFO - Started process (PID=1420) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:12:10.630+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:12:10.631+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:12:10.631+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:12:10.644+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:12:10.658+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:12:10.658+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:12:10.671+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:12:10.671+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:12:10.681+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.052 seconds
+[2024-12-14T17:12:40.907+0000] {processor.py:161} INFO - Started process (PID=1465) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:12:40.907+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:12:40.908+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:12:40.908+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:12:40.920+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:12:40.934+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:12:40.934+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:12:40.946+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:12:40.946+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:12:40.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.051 seconds
+[2024-12-14T17:13:11.179+0000] {processor.py:161} INFO - Started process (PID=1475) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:13:11.179+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:13:11.180+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:13:11.180+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:13:11.197+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:13:11.212+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:13:11.212+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:13:11.226+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:13:11.226+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:13:11.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.060 seconds
+[2024-12-14T17:13:41.476+0000] {processor.py:161} INFO - Started process (PID=1520) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:13:41.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:13:41.477+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:13:41.477+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:13:41.492+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:13:41.507+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:13:41.507+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:13:41.519+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:13:41.519+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:13:41.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.055 seconds
+[2024-12-14T17:14:11.824+0000] {processor.py:161} INFO - Started process (PID=1530) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:14:11.824+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:14:11.825+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:14:11.825+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:14:11.838+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:14:11.853+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:14:11.853+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:14:11.865+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:14:11.865+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:14:11.874+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.052 seconds
+[2024-12-14T17:18:24.250+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:18:24.251+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:18:24.251+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:18:24.251+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:18:24.271+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:18:24.389+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:18:24.389+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:18:24.402+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:18:24.402+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:18:24.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.167 seconds
+[2024-12-14T17:18:54.622+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:18:54.622+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:18:54.623+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:18:54.623+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:18:54.635+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:18:54.690+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:18:54.690+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:18:54.701+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:18:54.700+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:18:54.754+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.134 seconds
+[2024-12-14T17:19:24.879+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:19:24.880+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:19:24.880+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:19:24.880+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:19:24.894+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:19:24.908+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:19:24.908+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:19:24.921+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:19:24.920+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:19:24.932+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.054 seconds
+[2024-12-14T17:19:55.127+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:19:55.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:19:55.128+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:19:55.127+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:19:55.144+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:19:55.159+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:19:55.159+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:19:55.171+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:19:55.171+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:19:55.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.109 seconds
+[2024-12-14T17:20:25.361+0000] {processor.py:161} INFO - Started process (PID=354) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:20:25.361+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:20:25.362+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:20:25.361+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:20:25.374+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:20:25.388+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:20:25.388+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:20:25.400+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:20:25.400+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:20:25.451+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.092 seconds
+[2024-12-14T17:20:55.688+0000] {processor.py:161} INFO - Started process (PID=364) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:20:55.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:20:55.689+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:20:55.689+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:20:55.727+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:20:55.742+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:20:55.742+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:20:55.754+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:20:55.754+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:20:55.798+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.111 seconds
+[2024-12-14T17:21:25.914+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:21:25.915+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:21:25.916+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:21:25.915+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:21:25.930+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:21:25.946+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:21:25.945+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:21:25.957+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:21:25.957+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:21:25.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.062 seconds
+[2024-12-14T17:21:56.277+0000] {processor.py:161} INFO - Started process (PID=419) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:21:56.277+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:21:56.277+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:21:56.277+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:21:56.289+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:21:56.304+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:21:56.304+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:21:56.316+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:21:56.316+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:21:56.352+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.077 seconds
+[2024-12-14T17:22:26.640+0000] {processor.py:161} INFO - Started process (PID=463) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:22:26.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:22:26.641+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:22:26.641+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:22:26.655+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:22:26.670+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:22:26.670+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:22:26.682+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:22:26.682+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:22:26.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.073 seconds
+[2024-12-14T17:22:56.974+0000] {processor.py:161} INFO - Started process (PID=473) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:22:56.974+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:22:56.975+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:22:56.974+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:22:56.985+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:22:57.001+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:22:57.001+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:22:57.012+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:22:57.012+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:22:57.056+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.084 seconds
+[2024-12-14T17:23:27.186+0000] {processor.py:161} INFO - Started process (PID=518) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:23:27.186+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:23:27.187+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:23:27.187+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:23:27.204+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:23:27.219+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:23:27.218+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:23:27.231+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:23:27.231+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:23:27.240+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.057 seconds
+[2024-12-14T17:28:26.582+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:28:26.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:28:26.583+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:28:26.583+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:28:26.604+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:28:26.719+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:28:26.718+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:28:26.729+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:28:26.729+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:28:26.738+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.159 seconds
+[2024-12-14T17:28:56.763+0000] {processor.py:161} INFO - Started process (PID=251) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:28:56.764+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:28:56.764+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:28:56.764+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:28:56.776+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:28:56.793+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:28:56.792+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:28:56.805+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:28:56.805+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:28:56.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.054 seconds
+[2024-12-14T17:29:27.046+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:29:27.047+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:29:27.047+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:29:27.047+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:29:27.062+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:29:27.079+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:29:27.079+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:29:27.091+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:29:27.091+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:29:27.102+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.058 seconds
+[2024-12-14T17:29:57.299+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:29:57.299+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:29:57.300+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:29:57.300+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:29:57.315+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:29:57.333+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:29:57.333+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:29:57.347+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:29:57.347+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:29:57.358+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.061 seconds
+[2024-12-14T17:30:27.584+0000] {processor.py:161} INFO - Started process (PID=354) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:30:27.584+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:30:27.585+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:30:27.585+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:30:27.597+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:30:27.612+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:30:27.612+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:30:27.623+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:30:27.623+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:30:27.634+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.052 seconds
+[2024-12-14T17:35:42.444+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:35:42.445+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:35:42.445+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:35:42.445+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:35:42.466+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:35:42.577+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:35:42.577+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:35:42.589+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:35:42.589+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:35:42.601+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.158 seconds
+[2024-12-14T17:36:12.900+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:36:12.900+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:36:12.901+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:36:12.900+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:36:12.916+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:36:12.934+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:36:12.934+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:36:12.946+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:36:12.946+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:36:12.957+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.059 seconds
+[2024-12-14T17:36:43.244+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:36:43.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:36:43.245+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:36:43.245+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:36:43.263+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:36:43.283+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:36:43.282+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:36:43.295+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:36:43.295+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:36:43.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.064 seconds
+[2024-12-14T17:37:13.570+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:37:13.570+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:37:13.571+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:37:13.570+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:37:13.587+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:37:13.603+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:37:13.603+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:37:13.617+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:37:13.617+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:37:13.628+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.059 seconds
+[2024-12-14T17:37:43.905+0000] {processor.py:161} INFO - Started process (PID=354) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:37:43.905+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:37:43.906+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:37:43.906+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:37:43.919+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:37:43.933+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:37:43.933+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:37:43.945+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:37:43.945+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:37:43.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.052 seconds
+[2024-12-14T17:38:14.228+0000] {processor.py:161} INFO - Started process (PID=364) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:38:14.228+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:38:14.229+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:38:14.229+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:38:14.245+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:38:14.261+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:38:14.260+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:38:14.273+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:38:14.273+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:38:14.283+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.056 seconds
+[2024-12-14T17:38:44.598+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:38:44.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:38:44.600+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:38:44.599+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:38:44.613+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:38:44.629+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:38:44.629+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:38:44.641+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:38:44.641+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:38:44.652+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.056 seconds
+[2024-12-14T17:39:14.834+0000] {processor.py:161} INFO - Started process (PID=419) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:39:14.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:39:14.835+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:39:14.835+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:39:14.851+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:39:14.866+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:39:14.866+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:39:14.878+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:39:14.878+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:39:14.889+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.056 seconds
+[2024-12-14T17:39:45.050+0000] {processor.py:161} INFO - Started process (PID=464) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:39:45.050+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:39:45.051+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:39:45.050+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:39:45.065+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:39:45.081+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:39:45.081+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:39:45.094+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:39:45.094+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:39:45.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.056 seconds
+[2024-12-14T17:40:15.357+0000] {processor.py:161} INFO - Started process (PID=474) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:40:15.358+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:40:15.358+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:40:15.358+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:40:15.371+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:40:15.387+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:40:15.386+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:40:15.398+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:40:15.398+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:40:15.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.060 seconds
+[2024-12-14T17:40:45.683+0000] {processor.py:161} INFO - Started process (PID=519) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:40:45.683+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:40:45.684+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:40:45.684+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:40:45.696+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:40:45.712+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:40:45.711+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:40:45.724+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:40:45.724+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:40:45.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.053 seconds
+[2024-12-14T17:41:16.050+0000] {processor.py:161} INFO - Started process (PID=529) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:41:16.050+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:41:16.051+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:41:16.051+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:41:16.067+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:41:16.084+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:41:16.083+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:41:16.095+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:41:16.095+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:41:16.105+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.057 seconds
+[2024-12-14T17:46:56.272+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:46:56.273+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:46:56.274+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:46:56.274+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:46:56.294+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:46:56.412+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:46:56.411+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:46:56.423+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:46:56.422+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:46:56.434+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.164 seconds
+[2024-12-14T17:47:26.711+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:47:26.711+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:47:26.712+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:47:26.711+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:47:26.729+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:47:26.746+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:47:26.745+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:47:26.759+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:47:26.759+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:47:26.769+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.060 seconds
+[2024-12-14T17:47:56.999+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:47:56.999+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:47:57.000+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:47:57.000+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:47:57.014+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:47:57.069+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:47:57.069+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:47:57.080+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:47:57.080+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:47:57.091+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.094 seconds
+[2024-12-14T17:48:27.381+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:48:27.381+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:48:27.382+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:48:27.382+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:48:27.393+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:48:27.408+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:48:27.408+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:48:27.419+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:48:27.419+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:48:27.430+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.050 seconds
+[2024-12-14T17:48:57.709+0000] {processor.py:161} INFO - Started process (PID=354) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:48:57.710+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:48:57.710+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:48:57.710+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:48:57.734+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:48:57.750+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:48:57.750+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:48:57.763+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:48:57.762+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:48:57.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.072 seconds
+[2024-12-14T17:49:28.020+0000] {processor.py:161} INFO - Started process (PID=364) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:49:28.021+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:49:28.021+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:49:28.021+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:49:28.032+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:49:28.047+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:49:28.047+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:49:28.059+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:49:28.059+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:49:28.068+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.049 seconds
+[2024-12-14T17:49:58.252+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:49:58.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:49:58.253+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:49:58.253+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:49:58.264+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:49:58.279+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:49:58.278+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:49:58.290+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:49:58.290+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:49:58.299+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.049 seconds
+[2024-12-14T17:50:28.612+0000] {processor.py:161} INFO - Started process (PID=419) to work on /opt/airflow/dags/music_process.py
+[2024-12-14T17:50:28.612+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/music_process.py for tasks to queue
+[2024-12-14T17:50:28.613+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:50:28.612+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/music_process.py
+[2024-12-14T17:50:28.624+0000] {processor.py:840} INFO - DAG(s) 'spotify_recommender_dag_v3' retrieved from /opt/airflow/dags/music_process.py
+[2024-12-14T17:50:28.638+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:50:28.638+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-12-14T17:50:28.650+0000] {logging_mixin.py:188} INFO - [2024-12-14T17:50:28.650+0000] {dag.py:3823} INFO - Setting next_dagrun for spotify_recommender_dag_v3 to 2024-12-14 00:00:00+00:00, run_after=2024-12-15 00:00:00+00:00
+[2024-12-14T17:50:28.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/music_process.py took 0.051 seconds
