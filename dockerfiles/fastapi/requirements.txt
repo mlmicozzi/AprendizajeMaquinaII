@@ -25,3 +25,6 @@ loguru==0.7.0
 
 # Miscellaneous utilities
 typing-extensions~=4.5.0
+
+
+python-multipart==0.0.6

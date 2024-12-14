@@ -59,6 +59,32 @@ Recomendaciones:
 
 - Probar la siguiente ruta [Spotify recommender](http://localhost:8800/view/) en la misma podrán ver el resultado de nuestro trabajo de los ultimos 4 meses.
 
+- En caso de querer probar las predicciones en bache utilizar la url: [Predicción en bache](http://localhost:8800/predict_csv/). Se deja en este repositorio un .csv de ejemplo para tal caso.
+
+'''
+curl -X POST "http://localhost:8800/predict_csv/" \
+-H "accept: application/json" \
+-H "Content-Type: multipart/form-data" \
+-F "file=@path/to/your/csv.csv"
+'''
+
+Sample output:
+
+'''
+{
+    "message": "Predictions generated successfully",
+    "predictions": [
+        {
+            "predicted_track_popularity": 0.7880306839942932
+        },
+        {
+            "predicted_track_popularity": 0.5666085481643677
+        }
+    ]
+}
+'''
+
+
 - De todas formas, otros links utiles son:
 
   - [MinIO](http://localhost:9000) 

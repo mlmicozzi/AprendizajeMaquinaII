@@ -398,3 +398,61 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 async def view_page():
     with open("templates/index.html", "r") as file:
         return file.read()
+    
+
+from fastapi import File, UploadFile
+from io import StringIO
+
+@app.post("/predict_csv/")
+async def predict_from_csv(file: UploadFile = File(...)):
+    """
+    Upload a CSV file with song data and get predictions for track popularity.
+    Each row is processed independently.
+    """
+    if model is None:
+        raise HTTPException(status_code=500, detail="Model not loaded")
+
+    try:
+        
+        content = await file.read()
+        df = pd.read_csv(StringIO(content.decode("utf-8")))
+
+        # valation of required columns
+        required_columns = numerical_columns
+        if not all(col in df.columns for col in required_columns):
+            missing_columns = set(required_columns) - set(df.columns)
+            raise HTTPException(status_code=400, detail=f"Missing columns: {missing_columns}")
+
+        
+        predictions = []
+
+        
+        for _, row in df.iterrows():
+            # Convert row to a DataFrame
+            input_df = pd.DataFrame([row[required_columns].to_dict()])
+            input_array = input_df.values.astype("float32")
+
+            # Normalize the input features using the scaler
+            input_array = (input_array - scaler_mean) / scaler_range
+
+            # Predict track popularity
+            prediction = model.predict(input_array).flatten()[0]
+            predictions.append(prediction)
+
+        
+        df["predicted_track_popularity"] = predictions
+
+        
+        output_csv = StringIO()
+        df.to_csv(output_csv, index=False)
+        output_csv.seek(0)
+
+        # Return the CSV as a response
+        return JSONResponse({
+            "message": "Predictions generated successfully",
+            "predictions": df[["predicted_track_popularity"]].to_dict(orient="records")
+        })
+
+    except Exception as e:
+        print(f"Error processing file: {e}")
+        raise HTTPException(status_code=500, detail=f"An error occurred: {e}")

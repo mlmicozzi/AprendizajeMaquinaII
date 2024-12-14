@@ -6027,3 +6027,457 @@ File Path                                   PID  Runtime      # DAGs    # Errors
 /opt/airflow/dags/retrain_music_model.py    416  0.01s             1           0  0.10s           2024-12-14T17:49:58
 ================================================================================
 [2024-12-14T17:50:53.271+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2024-12-14T18:35:20.202+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-12-14T18:35:20.203+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-12-14T18:35:20.203+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-12-14T18:35:20.203+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-12-14T18:35:20.227+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2024-12-14T18:35:20.299+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/music_process.py          244  0.02s             0           0
+/opt/airflow/dags/retrain_music_model.py    241  0.03s             0           0
+================================================================================
+[2024-12-14T18:35:50.479+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          254  0.00s             1           0  0.18s           2024-12-14T18:35:20
+/opt/airflow/dags/retrain_music_model.py    251  0.01s             1           0  0.19s           2024-12-14T18:35:20
+================================================================================
+[2024-12-14T18:36:20.795+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          299  0.00s             1           0  0.15s           2024-12-14T18:35:50
+/opt/airflow/dags/retrain_music_model.py    296  0.01s             1           0  0.16s           2024-12-14T18:35:50
+================================================================================
+[2024-12-14T18:36:26.676+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2024-12-14T18:41:54.218+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-12-14T18:41:54.218+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-12-14T18:41:54.218+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-12-14T18:41:54.219+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-12-14T18:41:54.237+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2024-12-14T18:41:54.315+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/music_process.py          244  0.03s             0           0
+/opt/airflow/dags/retrain_music_model.py    241  0.03s             0           0
+================================================================================
+[2024-12-14T18:42:24.551+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          254  0.00s             1           0  0.18s           2024-12-14T18:41:54
+/opt/airflow/dags/retrain_music_model.py    251  0.01s             1           0  0.19s           2024-12-14T18:41:54
+================================================================================
+[2024-12-14T18:42:54.890+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          299  0.00s             1           0  0.08s           2024-12-14T18:42:24
+/opt/airflow/dags/retrain_music_model.py    296  0.01s             1           0  0.11s           2024-12-14T18:42:24
+================================================================================
+[2024-12-14T18:43:25.214+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          309  0.00s             1           0  0.09s           2024-12-14T18:42:54
+/opt/airflow/dags/retrain_music_model.py    306  0.01s             1           0  0.12s           2024-12-14T18:42:55
+================================================================================
+[2024-12-14T18:43:55.501+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          354  0.00s             1           0  0.07s           2024-12-14T18:43:25
+/opt/airflow/dags/retrain_music_model.py    351  0.01s             1           0  0.11s           2024-12-14T18:43:25
+================================================================================
+[2024-12-14T18:44:25.756+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          364  0.00s             1           0  0.07s           2024-12-14T18:43:55
+/opt/airflow/dags/retrain_music_model.py    361  0.01s             1           0  0.10s           2024-12-14T18:43:55
+================================================================================
+[2024-12-14T18:44:31.909+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2024-12-14T18:49:29.535+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-12-14T18:49:29.536+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-12-14T18:49:29.536+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-12-14T18:49:29.536+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-12-14T18:49:29.554+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2024-12-14T18:49:29.631+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/music_process.py          244  0.02s             0           0
+/opt/airflow/dags/retrain_music_model.py    241  0.03s             0           0
+================================================================================
+[2024-12-14T18:49:59.772+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py                                 1           0  0.17s           2024-12-14T18:49:29
+/opt/airflow/dags/retrain_music_model.py                           1           0  0.18s           2024-12-14T18:49:29
+================================================================================
+[2024-12-14T18:50:30.195+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          299  0.00s             1           0  0.08s           2024-12-14T18:50:00
+/opt/airflow/dags/retrain_music_model.py    296  0.01s             1           0  0.11s           2024-12-14T18:50:00
+================================================================================
+[2024-12-14T18:51:00.474+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          309  0.00s             1           0  0.07s           2024-12-14T18:50:30
+/opt/airflow/dags/retrain_music_model.py    306  0.01s             1           0  0.10s           2024-12-14T18:50:30
+================================================================================
+[2024-12-14T18:51:30.753+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          354  0.00s             1           0  0.08s           2024-12-14T18:51:00
+/opt/airflow/dags/retrain_music_model.py    351  0.01s             1           0  0.11s           2024-12-14T18:51:00
+================================================================================
+[2024-12-14T18:52:00.921+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py                                 1           0  0.18s           2024-12-14T18:51:30
+/opt/airflow/dags/retrain_music_model.py                           1           0  0.19s           2024-12-14T18:51:30
+================================================================================
+[2024-12-14T18:52:03.851+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2024-12-14T18:56:15.899+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-12-14T18:56:15.900+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-12-14T18:56:15.900+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-12-14T18:56:15.900+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-12-14T18:56:15.918+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2024-12-14T18:56:15.990+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/music_process.py          244  0.02s             0           0
+/opt/airflow/dags/retrain_music_model.py    241  0.03s             0           0
+================================================================================
+[2024-12-14T18:56:46.160+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          251  0.00s             1           0  0.17s           2024-12-14T18:56:16
+/opt/airflow/dags/retrain_music_model.py                           1           0  0.18s           2024-12-14T18:56:16
+================================================================================
+[2024-12-14T18:57:16.456+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          299  0.00s             1           0  0.08s           2024-12-14T18:56:46
+/opt/airflow/dags/retrain_music_model.py    296  0.01s             1           0  0.11s           2024-12-14T18:56:46
+================================================================================
+[2024-12-14T18:57:46.750+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          309  0.00s             1           0  0.07s           2024-12-14T18:57:16
+/opt/airflow/dags/retrain_music_model.py    306  0.01s             1           0  0.10s           2024-12-14T18:57:16
+================================================================================
+[2024-12-14T18:58:17.090+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          354  0.00s             1           0  0.07s           2024-12-14T18:57:46
+/opt/airflow/dags/retrain_music_model.py    351  0.01s             1           0  0.12s           2024-12-14T18:57:46
+================================================================================
+[2024-12-14T18:58:47.334+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          364  0.00s             1           0  0.07s           2024-12-14T18:58:17
+/opt/airflow/dags/retrain_music_model.py    361  0.01s             1           0  0.10s           2024-12-14T18:58:17
+================================================================================
+[2024-12-14T18:59:17.626+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          409  0.00s             1           0  0.06s           2024-12-14T18:58:47
+/opt/airflow/dags/retrain_music_model.py    406  0.01s             1           0  0.10s           2024-12-14T18:58:47
+================================================================================
+[2024-12-14T18:59:47.922+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          419  0.00s             1           0  0.07s           2024-12-14T18:59:17
+/opt/airflow/dags/retrain_music_model.py    416  0.01s             1           0  0.10s           2024-12-14T18:59:17
+================================================================================
+[2024-12-14T18:59:53.416+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2024-12-14T19:07:11.329+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-12-14T19:07:11.330+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-12-14T19:07:11.330+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-12-14T19:07:11.330+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-12-14T19:07:11.348+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2024-12-14T19:07:11.422+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/music_process.py          244  0.02s             0           0
+/opt/airflow/dags/retrain_music_model.py    241  0.03s             0           0
+================================================================================
+[2024-12-14T19:07:41.695+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          254  0.00s             1           0  0.18s           2024-12-14T19:07:11
+/opt/airflow/dags/retrain_music_model.py    251  0.01s             1           0  0.18s           2024-12-14T19:07:11
+================================================================================
+[2024-12-14T19:08:12.051+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          299  0.00s             1           0  0.07s           2024-12-14T19:07:41
+/opt/airflow/dags/retrain_music_model.py    296  0.01s             1           0  0.11s           2024-12-14T19:07:41
+================================================================================
+[2024-12-14T19:08:42.390+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          309  0.00s             1           0  0.07s           2024-12-14T19:08:12
+/opt/airflow/dags/retrain_music_model.py    306  0.01s             1           0  0.11s           2024-12-14T19:08:12
+================================================================================
+[2024-12-14T19:09:12.770+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          354  0.00s             1           0  0.07s           2024-12-14T19:08:42
+/opt/airflow/dags/retrain_music_model.py    351  0.01s             1           0  0.10s           2024-12-14T19:08:42
+================================================================================
+[2024-12-14T19:09:43.151+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          364  0.00s             1           0  0.07s           2024-12-14T19:09:12
+/opt/airflow/dags/retrain_music_model.py    361  0.01s             1           0  0.10s           2024-12-14T19:09:12
+================================================================================
+[2024-12-14T19:10:13.476+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          409  0.00s             1           0  0.07s           2024-12-14T19:09:43
+/opt/airflow/dags/retrain_music_model.py    406  0.01s             1           0  0.10s           2024-12-14T19:09:43
+================================================================================
+[2024-12-14T19:10:43.849+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          419  0.00s             1           0  0.07s           2024-12-14T19:10:13
+/opt/airflow/dags/retrain_music_model.py    416  0.01s             1           0  0.11s           2024-12-14T19:10:13
+================================================================================
+[2024-12-14T19:11:14.234+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          464  0.00s             1           0  0.07s           2024-12-14T19:10:43
+/opt/airflow/dags/retrain_music_model.py    461  0.01s             1           0  0.10s           2024-12-14T19:10:43
+================================================================================
+[2024-12-14T19:11:44.643+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          474  0.00s             1           0  0.06s           2024-12-14T19:11:14
+/opt/airflow/dags/retrain_music_model.py    471  0.01s             1           0  0.10s           2024-12-14T19:11:14
+================================================================================
+[2024-12-14T19:12:11.979+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-12-14T19:12:11.995+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2024-12-14T19:12:15.053+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          519  0.00s             1           0  0.07s           2024-12-14T19:11:44
+/opt/airflow/dags/retrain_music_model.py    516  0.01s             1           0  0.10s           2024-12-14T19:11:44
+================================================================================
+[2024-12-14T19:12:45.413+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          529  0.00s             1           0  0.06s           2024-12-14T19:12:15
+/opt/airflow/dags/retrain_music_model.py    526  0.02s             1           0  0.10s           2024-12-14T19:12:15
+================================================================================
+[2024-12-14T19:13:15.803+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          574  0.00s             1           0  0.07s           2024-12-14T19:12:45
+/opt/airflow/dags/retrain_music_model.py    571  0.01s             1           0  0.11s           2024-12-14T19:12:45
+================================================================================
+[2024-12-14T19:13:46.209+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          584  0.00s             1           0  0.07s           2024-12-14T19:13:15
+/opt/airflow/dags/retrain_music_model.py    581  0.01s             1           0  0.10s           2024-12-14T19:13:15
+================================================================================
+[2024-12-14T19:14:16.561+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          629  0.00s             1           0  0.07s           2024-12-14T19:13:46
+/opt/airflow/dags/retrain_music_model.py    626  0.01s             1           0  0.10s           2024-12-14T19:13:46
+================================================================================
+[2024-12-14T19:14:46.860+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          639  0.00s             1           0  0.08s           2024-12-14T19:14:16
+/opt/airflow/dags/retrain_music_model.py    636  0.01s             1           0  0.12s           2024-12-14T19:14:16
+================================================================================
+[2024-12-14T19:15:17.136+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          684  0.00s             1           0  0.06s           2024-12-14T19:14:46
+/opt/airflow/dags/retrain_music_model.py    681  0.01s             1           0  0.10s           2024-12-14T19:14:46
+================================================================================
+[2024-12-14T19:15:47.473+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          694  0.00s             1           0  0.07s           2024-12-14T19:15:17
+/opt/airflow/dags/retrain_music_model.py    691  0.01s             1           0  0.11s           2024-12-14T19:15:17
+================================================================================
+[2024-12-14T19:16:17.721+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          739  0.00s             1           0  0.07s           2024-12-14T19:15:47
+/opt/airflow/dags/retrain_music_model.py    736  0.01s             1           0  0.10s           2024-12-14T19:15:47
+================================================================================
+[2024-12-14T19:16:48.071+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          749  0.00s             1           0  0.07s           2024-12-14T19:16:17
+/opt/airflow/dags/retrain_music_model.py    746  0.01s             1           0  0.10s           2024-12-14T19:16:17
+================================================================================
+[2024-12-14T19:17:12.301+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-12-14T19:17:12.323+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2024-12-14T19:17:18.371+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          767  0.00s             1           0  0.07s           2024-12-14T19:16:48
+/opt/airflow/dags/retrain_music_model.py    764  0.01s             1           0  0.10s           2024-12-14T19:16:48
+================================================================================
+[2024-12-14T19:17:24.415+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2024-12-14T19:21:05.832+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-12-14T19:21:05.832+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-12-14T19:21:05.833+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-12-14T19:21:05.833+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-12-14T19:21:05.851+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2024-12-14T19:21:05.922+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/music_process.py          244  0.02s             0           0
+/opt/airflow/dags/retrain_music_model.py    241  0.02s             0           0
+================================================================================
+[2024-12-14T19:21:36.145+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/music_process.py          254  0.00s             1           0  0.19s           2024-12-14T19:21:06
+/opt/airflow/dags/retrain_music_model.py    251  0.01s             1           0  0.20s           2024-12-14T19:21:06
+================================================================================
+[2024-12-14T19:21:47.078+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
