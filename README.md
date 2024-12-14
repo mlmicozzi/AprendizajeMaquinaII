@@ -13,13 +13,15 @@
 
 ## Dataset
 
-El dataset contiene más de 30000 registros de canciones de Spotify de 6 categorías (EDM, Latin, Pop, R&B, Rap y Rock), tomadas por medio de la API de Spotify.
+Los datos que alimentan al modelo de recomendación provienen de un proceso de exploración y transformación del dataset público en Kaggle `30000-spotify-songs`, que fue construido a través de un proceso de scrapeo de la API de Spotify (`spotifyr`).
 
-El dataset cuenta con información actualizada a fines del 2023.
+El dataset cuenta con información de canciones de Spotify, actualizada hasta fines del 2023, organizadas en 6 categorias (EDM, Latin, Pop, R&B, Rap y Rock).
 
-Nos centraremos en el campo `track_popularity` y buscaremos su relación con otros campos que describen las características musicales como: `key`, `tempo`, `danceability`, `energy`, entre otros; además del género/subgénero y el año de lanzamiento.
+De los 32833 registros del dataset original, nuestro set de datos se reduce a 23081 entradas (**-29.70%**) luego del proceso de limpieza aplicado.
 
 #### Dataset original: [30000 Spotify Songs](https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs)
+
+#### Dataset procesado: [TP Final - Aprendizaje de Máquinas I](https://github.com/mlmicozzi/SPOTIFY/)
 
 ## Estructura del Proyecto
 
